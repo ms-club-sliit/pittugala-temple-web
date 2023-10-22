@@ -1,10 +1,15 @@
 import Footer from '@/components/footer'
 import Image from 'next/image'
+import Navbar from "@/components/Navbar";
 
-export default function Home() {
+
+const Home = () => {
   return (
-    <>
-      <Footer />
-    </>
-  )
-}
+    <div>
+      <Navbar />
+     <Footer />
+    </div>
+  );
+};
+
+export default Home;
