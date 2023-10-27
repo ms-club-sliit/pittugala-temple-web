@@ -88,7 +88,7 @@ const Footer = () => {
                 </li>
                 <li className="mb-4">
                   <Link href="#" className="hover:underline">
-                    Contract
+                    Contact
                   </Link>
                 </li>
               </ul>
