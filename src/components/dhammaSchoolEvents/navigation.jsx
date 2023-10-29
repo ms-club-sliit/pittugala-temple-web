@@ -1,9 +1,10 @@
 // Event Navigation bar
 'use client'
-import { useState } from 'react'
-import TextField from '@mui/material/TextField'
 import { styled } from '@mui/material/styles'
+import { useState } from 'react'
+import Link from 'next/link'
 import SearchIcon from '@mui/icons-material/Search'
+import TextField from '@mui/material/TextField'
 
 const CustomTextField = styled(TextField)({
   '& .MuiOutlinedInput-input': {
@@ -48,49 +49,49 @@ const EventNavigation = () => {
         <div className="hidden md:block">
           <ul className="flex space-x-6 pr-20">
             <li>
-              <a
+              <Link
                 href="#"
                 style={linkStyles('All')}
                 onClick={() => handleLinkClick('All')}
               >
                 All
-              </a>
+              </Link>
             </li>
             <li>
-              <a
+              <Link
                 href="#"
                 style={linkStyles('Poya Day')}
                 onClick={() => handleLinkClick('Poya Day')}
               >
                 Poya Day
-              </a>
+              </Link>
             </li>
             <li>
-              <a
+              <Link
                 href="#"
                 style={linkStyles('Katina Pooja')}
                 onClick={() => handleLinkClick('Katina Pooja')}
               >
                 Katina Pooja
-              </a>
+              </Link>
             </li>
             <li>
-              <a
+              <Link
                 href="#"
                 style={linkStyles('Bodhi Pooja')}
                 onClick={() => handleLinkClick('Bodhi Pooja')}
               >
                 Bodhi Pooja
-              </a>
+              </Link>
             </li>
             <li>
-              <a
+              <Link
                 href="#"
                 style={linkStyles('Charity')}
                 onClick={() => handleLinkClick('Charity')}
               >
                 Charity
-              </a>
+              </Link>
             </li>
           </ul>
         </div>
@@ -115,49 +116,49 @@ const EventNavigation = () => {
           <div className="md:hidden ml-5">
             <ul>
               <li>
-                <a
+                <Link
                   href="#"
                   style={linkStyles('All')}
                   onClick={() => handleLinkClick('All')}
                 >
                   All
-                </a>
+                </Link>
               </li>
               <li>
-                <a
+                <Link
                   href="#"
                   style={linkStyles('Poya Day')}
                   onClick={() => handleLinkClick('Poya Day')}
                 >
                   Poya Day
-                </a>
+                </Link>
               </li>
               <li>
-                <a
+                <Link
                   href="#"
                   style={linkStyles('Katina Pooja')}
                   onClick={() => handleLinkClick('Katina Pooja')}
                 >
                   Katina Pooja
-                </a>
+                </Link>
               </li>
               <li>
-                <a
+                <Link
                   href="#"
                   style={linkStyles('Bodhi Pooja')}
                   onClick={() => handleLinkClick('Bodhi Pooja')}
                 >
                   Bodhi Pooja
-                </a>
+                </Link>
               </li>
               <li>
-                <a
+                <Link
                   href="#"
                   style={linkStyles('Charity')}
                   onClick={() => handleLinkClick('Charity')}
                 >
                   Charity
-                </a>
+                </Link>
               </li>
             </ul>
           </div>
