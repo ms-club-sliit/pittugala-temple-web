@@ -1,15 +1,15 @@
 import Footer from '@/components/footer'
-import Image from 'next/image'
-import Navbar from "@/components/Navbar";
-
+import Navbar from '@/components/Navbar'
+import Projects from '@/components/projects'
 
 const Home = () => {
   return (
     <div>
       <Navbar />
-     <Footer />
+      <Projects />
+      <Footer />
     </div>
-  );
-};
+  )
+}
 
-export default Home;
+export default Home
