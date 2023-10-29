@@ -1,53 +1,35 @@
-import React from 'react'
+'use client'
+import React, { useState, useEffect } from 'react'
+import Image from 'next/image'
+import projectDetails from './projectDetails.json'
 
 const Projects = () => {
+  const [projects, setProjects] = useState(projectDetails)
+
+  useEffect(() => {
+    setProjects(projectDetails)
+  }, [])
   return (
     <div className="min-h-screen bg-white flex flex-col pt-10">
       <h1 className="text-2xl md:text-4xl font-bold text-center">
-        Project Name
+        {projects.projectName}
       </h1>
       <h3 className="text-xl md:text-2xl mt-2 text-center mt-3">
-        Special project bio for understanding
+        {projects.projectBio}
       </h3>
-      <img
+      <Image
         src="/static/projectSample.png"
         alt="Project Image"
+        width={1082}
+        height={317}
         className="mt-4 w-full px-10 md:px-20"
       />
       <div className="text-center mt-12 mb-12 mx-20 md:mx-40">
-        <p className="mt-6">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam vehicula
-          libero nec augue molestie, non interdum tellus porttitor. Sed non
-          ultrices dui. Cras auctor porttitor turpis in feugiat. Integer
-          feugiat, ipsum quis commodo pharetra, nisl felis bibendum libero, eu
-          congue libero nisl et nulla. Morbi a interdum diam, ut elementum sem.
-          Phasellus vulputate egestas lacus a ultricies. Proin vestibulum tempus
-          quam ac condimentum. Vivamus at nibh quis tortor posuere vehicula ut
-          sit amet augue. Quisque risus enim, tristique at dolor nec, hendrerit
-          hendrerit massa. In lib
-        </p>
-        <p className="mt-6">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam vehicula
-          libero nec augue molestie, non interdum tellus porttitor. Sed non
-          ultrices dui. Cras auctor porttitor turpis in feugiat. Integer
-          feugiat, ipsum quis commodo pharetra, nisl felis bibendum libero, eu
-          congue libero nisl et nulla. Morbi a interdum diam, ut elementum sem.
-          Phasellus vulputate egestas lacus a ultricies. Proin vestibulum tempus
-          quam ac condimentum. Vivamus at nibh quis tortor posuere vehicula ut
-          sit amet augue. Quisque risus enim, tristique at dolor nec, hendrerit
-          hendrerit massa. In lib
-        </p>
-        <p className="mt-6">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam vehicula
-          libero nec augue molestie, non interdum tellus porttitor. Sed non
-          ultrices dui. Cras auctor porttitor turpis in feugiat. Integer
-          feugiat, ipsum quis commodo pharetra, nisl felis bibendum libero, eu
-          congue libero nisl et nulla. Morbi a interdum diam, ut elementum sem.
-          Phasellus vulputate egestas lacus a ultricies. Proin vestibulum tempus
-          quam ac condimentum. Vivamus at nibh quis tortor posuere vehicula ut
-          sit amet augue. Quisque risus enim, tristique at dolor nec, hendrerit
-          hendrerit massa. In lib
-        </p>
+        {projects.paragraphs.map((para, index) => (
+          <p className="mt-6" key={index}>
+            {para}
+          </p>
+        ))}
       </div>
     </div>
   )

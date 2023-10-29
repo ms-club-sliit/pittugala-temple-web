@@ -1,23 +1,26 @@
 // components/Navbar.js
-"use client";
-import { useState } from "react";
+'use client'
+import { useState } from 'react'
+import Image from 'next/image'
 
 const Navbar = () => {
-  const [isMobileMenuOpen, setMobileMenuOpen] = useState(false);
+  const [isMobileMenuOpen, setMobileMenuOpen] = useState(false)
 
   const toggleMobileMenu = () => {
-    setMobileMenuOpen(!isMobileMenuOpen);
-  };
+    setMobileMenuOpen(!isMobileMenuOpen)
+  }
 
   return (
     <nav className="bg-white p-4 text-black font-semibold">
       <div className="container mx-auto flex justify-between items-center pl-20">
         <div
-          className={`text-center ${isMobileMenuOpen ? "w-full" : "w-auto"}`}
+          className={`text-center ${isMobileMenuOpen ? 'w-full' : 'w-auto'}`}
         >
-          <img
+          <Image
             src="/static/Logo.png"
             alt="Website Logo"
+            width={168}
+            height={34}
             className="md:mx-auto"
           />
         </div>
@@ -48,7 +51,7 @@ const Navbar = () => {
       </div>
       <ul
         className={`md:hidden ${
-          isMobileMenuOpen ? "block" : "hidden"
+          isMobileMenuOpen ? 'block' : 'hidden'
         } border-t border-black`}
       >
         <div className="flex flex-col items-center">
@@ -67,7 +70,7 @@ const Navbar = () => {
         </div>
       </ul>
     </nav>
-  );
-};
+  )
+}
 
-export default Navbar;
+export default Navbar

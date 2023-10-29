@@ -4,11 +4,11 @@ import Projects from '@/components/projects'
 
 const Home = () => {
   return (
-    <div>
+    <>
       <Navbar />
       <Projects />
       <Footer />
-    </div>
+    </>
   )
 }
 
