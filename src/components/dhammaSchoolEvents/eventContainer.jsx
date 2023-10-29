@@ -19,7 +19,7 @@ const EventContainer = ({ event }) => {
           </p>
           <p className="mt-5">{event.description}</p>
           <div className="flex justify-center mt-5">
-            <button className="bg-red-900 h-10 flex justify-center w-full sm:px-5 px-[35px] py-[11px] rounded-[3px] text-sm text-white">
+            <button className="bg-red-900 font-semibold h-10 flex justify-center w-full sm:px-5 px-[35px] py-[11px] rounded-[3px] text-sm text-white">
               View Event
             </button>
           </div>
