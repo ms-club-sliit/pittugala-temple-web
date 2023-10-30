@@ -21,6 +21,24 @@ const CustomTextField = styled(TextField)({
   },
 })
 
+const linkStyles = (isActive) => ({
+  backgroundColor: isActive ? 'maroon' : 'transparent',
+  color: isActive ? 'white' : 'black',
+  display: 'inline-block',
+  padding: '5px 10px',
+  borderRadius: '5px',
+  cursor: 'pointer',
+  transition: 'background-color 0.3s, color 0.3s',
+})
+
+const links = [
+  { label: 'All', key: 'All' },
+  { label: 'Poya Day', key: 'Poya Day' },
+  { label: 'Katina Pooja', key: 'Katina Pooja' },
+  { label: 'Bodhi Pooja', key: 'Bodhi Pooja' },
+  { label: 'Charity', key: 'Charity' },
+]
+
 const EventNavigation = () => {
   const [isMobileMenuOpen, setMobileMenuOpen] = useState(false)
   const [activeLink, setActiveLink] = useState('')
@@ -29,16 +47,6 @@ const EventNavigation = () => {
     setMobileMenuOpen(!isMobileMenuOpen)
   }
 
-  const linkStyles = (link) => ({
-    backgroundColor: activeLink === link ? 'maroon' : 'transparent',
-    color: activeLink === link ? 'white' : 'black',
-    display: 'inline-block',
-    padding: '5px 10px',
-    borderRadius: '5px',
-    cursor: 'pointer',
-    transition: 'background-color 0.3s, color 0.3s',
-  })
-
   const handleLinkClick = (link) => {
     setActiveLink(link)
   }
@@ -46,54 +54,17 @@ const EventNavigation = () => {
   return (
     <nav className="bg-white p-4 text-black font-semibold">
       <div className="container mx-auto flex justify-between items-center pl-20 pr-20">
-        <div className="hidden md:block">
-          <ul className="flex space-x-6 pr-20">
-            <li>
-              <Link
-                href="#"
-                style={linkStyles('All')}
-                onClick={() => handleLinkClick('All')}
-              >
-                All
-              </Link>
-            </li>
-            <li>
-              <Link
-                href="#"
-                style={linkStyles('Poya Day')}
-                onClick={() => handleLinkClick('Poya Day')}
-              >
-                Poya Day
-              </Link>
-            </li>
-            <li>
-              <Link
-                href="#"
-                style={linkStyles('Katina Pooja')}
-                onClick={() => handleLinkClick('Katina Pooja')}
-              >
-                Katina Pooja
-              </Link>
-            </li>
-            <li>
-              <Link
-                href="#"
-                style={linkStyles('Bodhi Pooja')}
-                onClick={() => handleLinkClick('Bodhi Pooja')}
-              >
-                Bodhi Pooja
-              </Link>
-            </li>
-            <li>
-              <Link
-                href="#"
-                style={linkStyles('Charity')}
-                onClick={() => handleLinkClick('Charity')}
-              >
-                Charity
-              </Link>
-            </li>
-          </ul>
+        <div className="hidden md:flex space-x-6 pr-20">
+          {links.map((linkItem) => (
+            <Link
+              key={linkItem.key}
+              href="#"
+              style={linkStyles(linkItem.key === activeLink)}
+              onClick={() => handleLinkClick(linkItem.key)}
+            >
+              {linkItem.label}
+            </Link>
+          ))}
         </div>
 
         {/* Mobile menu button/icon */}
@@ -113,59 +84,23 @@ const EventNavigation = () => {
         />
 
         {isMobileMenuOpen && (
-          <div className="md:hidden ml-5">
-            <ul>
-              <li>
+          <ul className="md:hidden ml-5 ">
+            {links.map((linkItem) => (
+              <li key={linkItem.key}>
                 <Link
+                  className="text-gray-600 hover:text-black"
                   href="#"
-                  style={linkStyles('All')}
-                  onClick={() => handleLinkClick('All')}
+                  style={linkStyles(linkItem.key === activeLink)}
+                  onClick={() => handleLinkClick(linkItem.key)}
                 >
-                  All
+                  {linkItem.label}
                 </Link>
               </li>
-              <li>
-                <Link
-                  href="#"
-                  style={linkStyles('Poya Day')}
-                  onClick={() => handleLinkClick('Poya Day')}
-                >
-                  Poya Day
-                </Link>
-              </li>
-              <li>
-                <Link
-                  href="#"
-                  style={linkStyles('Katina Pooja')}
-                  onClick={() => handleLinkClick('Katina Pooja')}
-                >
-                  Katina Pooja
-                </Link>
-              </li>
-              <li>
-                <Link
-                  href="#"
-                  style={linkStyles('Bodhi Pooja')}
-                  onClick={() => handleLinkClick('Bodhi Pooja')}
-                >
-                  Bodhi Pooja
-                </Link>
-              </li>
-              <li>
-                <Link
-                  href="#"
-                  style={linkStyles('Charity')}
-                  onClick={() => handleLinkClick('Charity')}
-                >
-                  Charity
-                </Link>
-              </li>
-            </ul>
-          </div>
+            ))}
+          </ul>
         )}
       </div>
     </nav>
   )
 }
-
 export default EventNavigation
