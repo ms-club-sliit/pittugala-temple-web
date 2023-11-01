@@ -2,6 +2,7 @@
 'use client'
 import { useState } from 'react'
 import Image from 'next/image'
+import Link from 'next/link'
 
 const Navbar = () => {
   const [isMobileMenuOpen, setMobileMenuOpen] = useState(false)
@@ -27,16 +28,16 @@ const Navbar = () => {
         <div className="hidden md:block">
           <ul className="flex space-x-6 pr-20">
             <li>
-              <a href="#">About</a>
+              <Link href="/about">About</Link>
             </li>
             <li className="pl-5">
-              <a href="#">Events</a>
+              <Link href="/events">Events</Link>
             </li>
             <li className="pl-5">
-              <a href="#">Projects</a>
+              <Link href="/projects">Projects</Link>
             </li>
             <li className="pl-5">
-              <a href="#">Contact</a>
+              <Link href="/contact">Contact</Link>
             </li>
           </ul>
         </div>
