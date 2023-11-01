@@ -1,13 +1,8 @@
-import DhammaSchoolEventsPage from '@/components/dhammaSchoolEvents'
-import Footer from '@/components/footer'
-import Navbar from '@/components/Navbar'
-
+import LandingEvents from '@/components/landingPage/events'
 const Home = () => {
   return (
     <>
-      <Navbar />
-      <DhammaSchoolEventsPage />
-      <Footer />
+      <LandingEvents />
     </>
   )
 }
