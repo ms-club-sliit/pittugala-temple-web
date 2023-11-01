@@ -1,15 +1,15 @@
+import DhammaSchoolEventsPage from '@/components/dhammaSchoolEvents'
 import Footer from '@/components/footer'
-import Image from 'next/image'
-import Navbar from "@/components/Navbar";
-
+import Navbar from '@/components/Navbar'
 
 const Home = () => {
   return (
-    <div>
+    <>
       <Navbar />
-     <Footer />
-    </div>
-  );
-};
+      <DhammaSchoolEventsPage />
+      <Footer />
+    </>
+  )
+}
 
-export default Home;
+export default Home
