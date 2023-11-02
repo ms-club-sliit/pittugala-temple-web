@@ -1,6 +1,7 @@
 // components/Navbar.js
 'use client'
 import { useState } from 'react'
+import Link from 'next/link'
 
 const Navbar = () => {
   const [isMobileMenuOpen, setMobileMenuOpen] = useState(false)
@@ -15,11 +16,13 @@ const Navbar = () => {
         <div
           className={`text-center ${isMobileMenuOpen ? 'w-full' : 'w-auto'}`}
         >
-          <img
-            src="/static/Logo.png"
-            alt="Website Logo"
-            className="md:mx-auto"
-          />
+          <Link href="/">
+            <img
+              src="/static/Logo.png"
+              alt="Website Logo"
+              className="md:mx-auto"
+            />
+          </Link>
         </div>
         <div className="hidden md:block">
           <ul className="flex space-x-6 pr-20">
