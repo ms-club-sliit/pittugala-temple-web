@@ -1,22 +1,27 @@
+import Image from 'next/image'
 export default function index() {
   const events = [
     {
-      src: './static/events.png',
+      id: 1,
+      src: '/static/events.png',
       topic: 'Poya day sill',
       dis: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam vehicula libero',
     },
     {
-      src: './static/events.png',
+      id: 2,
+      src: '/static/events.png',
       topic: 'Poya day sill',
       dis: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam vehicula libero',
     },
     {
-      src: './static/events.png',
+      id: 3,
+      src: '/static/events.png',
       topic: 'Poya day sill',
       dis: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam vehicula libero',
     },
     {
-      src: './static/events.png',
+      id: 4,
+      src: '/static/events.png',
       topic: 'Poya day sill',
       dis: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam vehicula libero',
     },
@@ -26,13 +31,16 @@ export default function index() {
     <div className="p-8 hidden sm:flex flex-col place-items-center w-full ">
       <h1 className="text-4xl font-bold mb-8">Events</h1>
       <div className="  grid grid-cols-4   w-11/12 drop-shadow">
-        {events.map((event, idx) => (
-          <div key={idx} className=" rounded-sm w-72 bg-[#FEF9F5]">
-            <img
+        {events.map((event) => (
+          <div key={event.id} className=" rounded-sm w-72 bg-[#FEF9F5]">
+            <Image
               src={event.src}
+              width={500}
+              height={500}
               alt="Event Image"
-              className=" mb-2 md:mb-4 w-full h-20 lg:h-48 object-cover rounded-md"
+              className="mb-2 md:mb-4 w-full h-20 lg:h-48 object-cover rounded-md"
             />
+
             <div className="p-2">
               <h2 className=" text-lg md:text-2xl font-medium mb-2 md:mb-4">
                 {event.topic}
