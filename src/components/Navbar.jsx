@@ -1,19 +1,19 @@
 // components/Navbar.js
-"use client";
-import { useState } from "react";
+'use client'
+import { useState } from 'react'
 
 const Navbar = () => {
-  const [isMobileMenuOpen, setMobileMenuOpen] = useState(false);
+  const [isMobileMenuOpen, setMobileMenuOpen] = useState(false)
 
   const toggleMobileMenu = () => {
-    setMobileMenuOpen(!isMobileMenuOpen);
-  };
+    setMobileMenuOpen(!isMobileMenuOpen)
+  }
 
   return (
     <nav className="bg-white p-4 text-black font-semibold">
       <div className="container mx-auto flex justify-between items-center pl-20">
         <div
-          className={`text-center ${isMobileMenuOpen ? "w-full" : "w-auto"}`}
+          className={`text-center ${isMobileMenuOpen ? 'w-full' : 'w-auto'}`}
         >
           <img
             src="/static/Logo.png"
@@ -27,7 +27,7 @@ const Navbar = () => {
               <a href="#">About</a>
             </li>
             <li className="pl-5">
-              <a href="#">Events</a>
+              <a href="/events">Events</a>
             </li>
             <li className="pl-5">
               <a href="#">Projects</a>
@@ -48,7 +48,7 @@ const Navbar = () => {
       </div>
       <ul
         className={`md:hidden ${
-          isMobileMenuOpen ? "block" : "hidden"
+          isMobileMenuOpen ? 'block' : 'hidden'
         } border-t border-black`}
       >
         <div className="flex flex-col items-center">
@@ -56,7 +56,7 @@ const Navbar = () => {
             <a href="#">About</a>
           </li>
           <li>
-            <a href="#">Events</a>
+            <a href="/events">Events</a>
           </li>
           <li>
             <a href="#">Projects</a>
@@ -67,7 +67,7 @@ const Navbar = () => {
         </div>
       </ul>
     </nav>
-  );
-};
+  )
+}
 
-export default Navbar;
+export default Navbar
