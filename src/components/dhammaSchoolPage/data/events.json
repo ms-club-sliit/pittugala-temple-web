@@ -1,0 +1,30 @@
+[
+  {
+    "id": 1,
+    "imageSrc": "/static/worship.png",
+    "imageAlt": "Image of a person worshipping",
+    "title": "Poya day sill",
+    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Namhtht vehicula libero"
+  },
+  {
+    "id": 2,
+    "imageSrc": "/static/worship.png",
+    "imageAlt": "Image of a person worshipping",
+    "title": "Poya day sill",
+    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Namhtht vehicula libero"
+  },
+  {
+    "id": 3,
+    "imageSrc": "/static/worship.png",
+    "imageAlt": "Image of a person worshipping",
+    "title": "Poya day sill",
+    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Namhtht vehicula libero"
+  },
+  {
+    "id": 4,
+    "imageSrc": "/static/worship.png",
+    "imageAlt": "Image of a person worshipping",
+    "title": "Poya day sill",
+    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Namhtht vehicula libero"
+  }
+]

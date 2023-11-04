@@ -1,42 +1,7 @@
-import EventContainer from '../dhammaSchoolEvents/eventContainer'
+import EventContainer from '@/components/dhammaSchoolEvents/eventContainer'
+import events from './data/events.json'
 
 const DhammaSchoolPage = () => {
-  const events = [
-    {
-      id: 1, // Unique ID
-      imageSrc: '/static/worship.png',
-      imageAlt: 'Image of a person worshipping',
-      title: 'Poya day sill',
-      description:
-        'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Namhtht vehicula libero',
-    },
-    {
-      id: 2, // Unique ID
-      imageSrc: '/static/worship.png',
-      imageAlt: 'Image of a person worshipping',
-      title: 'Poya day sill',
-      description:
-        'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Namhtht vehicula libero',
-    },
-    {
-      id: 3, // Unique ID
-      imageSrc: '/static/worship.png',
-      imageAlt: 'Image of a person worshipping',
-      title: 'Poya day sill',
-      description:
-        'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Namhtht vehicula libero',
-    },
-    {
-      id: 4, // Unique ID
-      imageSrc: '/static/worship.png',
-      imageAlt: 'Image of a person worshipping',
-      title: 'Poya day sill',
-      description:
-        'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Namhtht vehicula libero',
-    },
-    // Add more events as needed
-  ]
-
   return (
     <div className="bg-white py-8">
       <div className="text-black container mx-auto px-20">
