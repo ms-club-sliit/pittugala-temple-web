@@ -6,7 +6,7 @@ import Image from 'next/image'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faAngleRight } from '@fortawesome/free-solid-svg-icons';
 
-import { ABOUT_TEXT, ABOUT_POTRAIT_TEXT } from '../../assets/consts'
+import { ABOUT_TEXT, ABOUT_POTRAIT_TEXT } from '../../consts/consts'
 
 const About = () => {
 
