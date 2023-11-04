@@ -1,11 +1,12 @@
 'use client'
 import React from 'react'
 import Link from 'next/link'
+import Image from 'next/image'
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faAngleRight } from '@fortawesome/free-solid-svg-icons';
 
-import * as Text from '../../assets/strings/Stirngs.jsx'
+import { ABOUT_TEXT, ABOUT_POTRAIT_TEXT } from '../../assets/consts'
 
 const About = () => {
 
@@ -17,23 +18,27 @@ const About = () => {
                 </div>
 
                 <div className="flex justify-center items-center">
-                    <p className="mb-6 text-base font-normal text-black w-[90%]">{Text.ABOUT_TEXT}</p>
+                    <p className="mb-6 text-base font-normal text-black w-[90%]">{ABOUT_TEXT}</p>
                 </div>
                 <div className="flex justify-center items-center">
                     <div className="grid grid-cols-1 md:grid-cols-2 gap-20 justify-center items-center">
                         <div className="p-4 w-[330px] flex flex-col items-center">
-                            <img
+                            <Image
                                 src="/static/About-Potrait.png"
-                                alt="Projects Landing Image"
+                                alt="About Potrait Image"
+                                width={200}
+                                height={250}
                             />
-                            <p className="mb-6 text-sm font-normal text-black w-60 text-center mt-5">{Text.ABOUT_POTRAIT_TEXT}</p>
+                            <p className="mb-6 text-sm font-normal text-black w-60 text-center mt-5">{ABOUT_POTRAIT_TEXT}</p>
                         </div>
                         <div className="p-4 w-[330px] flex flex-col items-center">
-                            <img
+                            <Image
                                 src="/static/About-Potrait.png"
-                                alt="Projects Landing Image"
+                                alt="About Potrait Image"
+                                width={200}
+                                height={250}
                             />
-                            <p className="mb-6 text-sm font-normal text-black w-60 text-center mt-5">{Text.ABOUT_POTRAIT_TEXT}</p>
+                            <p className="mb-6 text-sm font-normal text-black w-60 text-center mt-5">{ABOUT_POTRAIT_TEXT}</p>
                         </div>
                     </div>
 
