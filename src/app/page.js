@@ -1,15 +1,17 @@
+import About from '@/components/About'
 import Footer from '@/components/footer'
 import Navbar from "@/components/Navbar";
 import Projects from '@/components/Projects';
 
 const Home = () => {
   return (
-    <div>
+    <>
       <Navbar />
+      <About />
       <Projects />
       <Footer />
-    </div>
-  );
-};
+    </>
+  )
+}
 
-export default Home;
+export default Home

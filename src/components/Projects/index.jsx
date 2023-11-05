@@ -5,9 +5,9 @@ import Link from 'next/link'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faAngleRight } from '@fortawesome/free-solid-svg-icons';
 
-const Projects = () => {
+import { PROJECT_TEXT } from '../../consts/consts'
 
-    const sampleText = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam vehicula libero nec augue molestie, non interdum tellus porttitor. Sed non ultrices dui. Cras auctor porttitor turpis in feugiat. Integer feugiat, ipsum quis commodo pharetra, nisl felis bibendum libero, eu congue libero nisl et Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam vehicula"
+const Projects = () => {
     return (
         <>
             <div className="mx-auto w-full p-4 py-6 lg:py-8 bg-white">
@@ -15,7 +15,7 @@ const Projects = () => {
                     <h2 class="mb-4 text-black font-extrabold leading-none tracking-tight text-4xl md:text-4xl lg:text-4xl">Projects</h2>
                 </div>
                 <div className="flex justify-center items-center">
-                    <p class="mb-6 text-l font-normal text-black w-[90%]">{sampleText}</p>
+                    <p class="mb-6 text-l font-normal text-black w-[90%]">{PROJECT_TEXT}</p>
                 </div>
                 <div className="flex justify-center items-center">
                     <img
