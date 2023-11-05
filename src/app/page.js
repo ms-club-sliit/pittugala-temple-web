@@ -1,12 +1,14 @@
 import About from '@/components/About'
 import Footer from '@/components/footer'
-import Navbar from '@/components/Navbar'
+import Navbar from "@/components/Navbar";
+import Projects from '@/components/Projects';
 
 const Home = () => {
   return (
     <>
       <Navbar />
       <About />
+      <Projects />
       <Footer />
     </>
   )
