@@ -16,15 +16,6 @@
   }
 }
 
-body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))) rgb(var(--background-start-rgb));
-  margin: 0;
-  padding: 0;
-}
-
 .about-top-ribbon {
   background-image: url('/static/About-Top.png');
   background-repeat: no-repeat;
@@ -50,3 +41,61 @@ body {
     background-position: left;
   }
 }
+
+body {
+  color: rgb(var(--foreground-rgb));
+  background: linear-gradient(to bottom,
+      transparent,
+      rgb(var(--background-end-rgb))) rgb(var(--background-start-rgb));
+  margin: 0;
+  padding: 0;
+}
+
+.hide-right {
+  transform: translateX(100%);
+  transition: transform 0.5s ease;
+  opacity: 0;
+}
+
+.hide-left {
+  transform: translateX(100%);
+  transition: transform 1s ease;
+  opacity: 0;
+}
+
+.show-right {
+  transform: translateX(0);
+  opacity: 1;
+}
+
+.show-left {
+  transform: translateX(0);
+  opacity: 1;
+}
+
+@media (min-width: 1024px) {
+  .hide-right {
+    transform: translateX(-100%);
+    transition: transform 1s ease;
+    opacity: 0;
+  }
+
+  .hide-left {
+    transform: translateX(100%);
+    transition: transform 0.5s ease;
+    opacity: 0;
+  }
+
+  .show-right {
+    transform: translateX(0);
+    opacity: 1;
+  }
+
+  .show-left {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+
+
