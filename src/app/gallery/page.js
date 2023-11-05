@@ -18,7 +18,7 @@ const galleryData = {
       "category": "poya_day",
       "image": "/static/Gallery.png",
       "width": "617",
-      "height": "300",
+      "height": "400",
     },
     {
       "id": 2,
@@ -31,22 +31,22 @@ const galleryData = {
       "id": 3,
       "category": "bodhi_pooja",
       "image": "/static/Gallery.png",
-      "width": "480",
-      "height": "600",
+      "width": "617",
+      "height": "400",
     },
     {
       "id": 4,
       "category": "charity",
       "image": "/static/Temple1.png",
-      "width": "440",
+      "width": "617",
       "height": "400",
     },
     {
       "id": 5,
       "category": "poya_day",
       "image": "/static/Gallery.png",
-      "width": "440",
-      "height": "320",
+      "width": "617",
+      "height": "400",
     },
     {
       "id": 6,
@@ -59,23 +59,30 @@ const galleryData = {
       "id": 7,
       "category": "bodhi_pooja",
       "image": "/static/Gallery.png",
-      "width": "450",
-      "height": "300",
+      "width": "617",
+      "height": "400",
     },
     {
       "id": 8,
       "category": "charity",
       "image": "/static/Temple1.png",
-      "width": "450",
+      "width": "617",
       "height": "400",
     },
     {
       "id": 9,
       "category": "poya_day",
       "image": "/static/Gallery.png",
-      "width": "450",
-      "height": "600",
-    }
+      "width": "617",
+      "height": "400",
+    },
+    {
+      "id": 10,
+      "category": "poya_day",
+      "image": "/static/Temple1.png",
+      "width": "617",
+      "height": "400",
+    },
   ]
 };
 
@@ -85,71 +92,33 @@ const Gallery = () => {
   const [selectedCategory, setSelectedCategory] = useState('All');
 
   const handleCategoryChange = (category) => {
-    console.log("gallerDate",category);
     setSelectedCategory(category);
   };
 
   const filteredGalleryData = selectedCategory === 'All' ? galleryData.gallery : galleryData.gallery.filter(item => item.category === selectedCategory);
-  console.log("Filtered Gallery Data:", filteredGalleryData); 
-
-  console.log("Props being passed to GalleryNavigation - handleCategoryChange:", handleCategoryChange);
-  console.log("Props being passed to GalleryNavigation - selectedCategory:", selectedCategory);
 
 
   return (
-    <div
-      style={{
-
-        backgroundColor: "white",
-
-      }}
-    >
+    <div className="bg-white">
       <Navbar />
       <GalleryNavigation handleCategoryChange={handleCategoryChange} selectedCategory={selectedCategory} />
       <hr></hr>
-
-      <Container maxWidth="100vw" sx={{ width: "90vw", marginRight: "2%", marginTop: "2%", marginBottom: "2%" }} >
-
-        <ImageList sx={{ width: 'auto', height: 'auto' }} variant="woven" cols={3} gap={8}>
-          {filteredGalleryData.map((item) => ( // Use filteredGalleryData instead of galleryData.gallery
-            <ImageListItem key={item.id}>
-              <img
-                srcSet={`${item.image}?w=${item.width}&fit=crop&auto=format&dpr=2 2x`}
-                src={`${item.image}?w=${item.width}&fit=crop&auto=format`}
-                alt={`Image ${item.id}`}
-                loading="lazy"
-              />
-            </ImageListItem>
-          ))}
-        </ImageList>
-      </Container>
-      {/* <ImageList sx={{ width: 'auto', height: 'auto' }} variant="woven" cols={3} gap={8}>
-          {galleryData?.gallery.map((item) => (
-            <ImageListItem key={item.img}>
-              <img
-                srcSet={`${item.image}?w=161&fit=crop&auto=format&dpr=2 2x`}
-                src={`${item.image}?w=161&fit=crop&auto=format`}
-                alt={item.title}
-                loading="lazy"
-              />
-            </ImageListItem>
-          ))}
-        </ImageList> */}
-
-      {/* <div className="gallery-container"  style={{
-            marginLeft: "8%",
-            marginTop: "2%",
-          }}>
-        {galleryData.gallery.map((item, index) => (
-          <div key={item.id} className="gallery-item" style={{ flex: `0 0 calc(33.33% - 10px)`, margin: "5px" }}>
+      <div className="grid grid-cols-3 gap-4 w-10/12 ml-[180px] mb-10 mt-10 ">
+        {filteredGalleryData.map((item, index) => (
+          <div
+            key={item.id}
+            className={`${index === 1 || index === 5 ? 'col-span-2' : 'col-span-1'
+              }`}
+          >
             <img
               src={item.image}
-              alt={`Image ${item.id}`}
-              style={{ width: "auto", height: `${item.height}px`, marginTop: "2%" }}
+              alt={item.category}
+              className="w-full rounded-lg w-full h-full"
             />
           </div>
-        ))}
-      </div> */}
+        ),
+        )}
+      </div>
       <hr></hr>
       <Footer />
     </div>
