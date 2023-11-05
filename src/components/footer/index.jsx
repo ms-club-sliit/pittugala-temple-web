@@ -88,7 +88,7 @@ const Footer = () => {
                 </li>
                 <li className="mb-4">
                   <Link href="#" className="hover:underline">
-                    Contact
+                    Contract
                   </Link>
                 </li>
               </ul>
@@ -115,7 +115,7 @@ const Footer = () => {
                 src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3960.797616351774!2d79.9724682!3d6.914784299999999!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ae256db0806db0b%3A0x1f268e1d8b84cf05!2sPittugala%20Temple%2C%20162%2F24%2F1%20B263%2C%20Malabe%2C%20Sri%20Lanka!5e0!3m2!1sen!2sde!4v1696947856756!5m2!1sen!2sde"
                 allowFullScreen=""
                 loading="lazy"
-                referrerPolicy="no-referrer-when-downgrade"
+                referrerpolicy="no-referrer-when-downgrade"
               ></iframe>
             </div>
           </div>

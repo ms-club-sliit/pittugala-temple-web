@@ -1,8 +1,13 @@
 import LandingEvents from '@/components/landingPage/events'
+import About from '@/components/About'
+import Projects from '@/components/projects'
+
 const Home = () => {
   return (
     <>
-      <LandingEvents />
+      <About />
+      <Projects />
+       <LandingEvents />
     </>
   )
 }

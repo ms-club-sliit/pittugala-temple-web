@@ -1,6 +1,7 @@
 // components/Navbar.js
 'use client'
 import { useState } from 'react'
+import Image from 'next/image'
 import Link from 'next/link'
 
 const Navbar = () => {
@@ -16,27 +17,29 @@ const Navbar = () => {
         <div
           className={`text-center ${isMobileMenuOpen ? 'w-full' : 'w-auto'}`}
         >
-          <Link href="/">
-            <img
-              src="/static/Logo.png"
-              alt="Website Logo"
-              className="md:mx-auto"
-            />
-          </Link>
+   <Link href="/">
+          <Image
+            src="/static/Logo.png"
+            alt="Website Logo"
+            width={168}
+            height={34}
+            className="md:mx-auto"
+          />
+           </Link>
         </div>
         <div className="hidden md:block">
           <ul className="flex space-x-6 pr-20">
             <li>
-              <a href="#">About</a>
+              <Link href="/about">About</Link>
             </li>
             <li className="pl-5">
-              <a href="/events">Events</a>
+              <Link href="/events">Events</Link>
             </li>
             <li className="pl-5">
-              <a href="#">Projects</a>
+              <Link href="/projects">Projects</Link>
             </li>
             <li className="pl-5">
-              <a href="#">Contact</a>
+              <Link href="/contact">Contact</Link>
             </li>
           </ul>
         </div>
