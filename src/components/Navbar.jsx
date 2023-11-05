@@ -17,6 +17,7 @@ const Navbar = () => {
         <div
           className={`text-center ${isMobileMenuOpen ? 'w-full' : 'w-auto'}`}
         >
+   <Link href="/">
           <Image
             src="/static/Logo.png"
             alt="Website Logo"
@@ -24,6 +25,7 @@ const Navbar = () => {
             height={34}
             className="md:mx-auto"
           />
+           </Link>
         </div>
         <div className="hidden md:block">
           <ul className="flex space-x-6 pr-20">
@@ -60,7 +62,7 @@ const Navbar = () => {
             <a href="#">About</a>
           </li>
           <li>
-            <a href="#">Events</a>
+            <a href="/events">Events</a>
           </li>
           <li>
             <a href="#">Projects</a>
