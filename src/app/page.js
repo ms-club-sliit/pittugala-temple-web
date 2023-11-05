@@ -1,15 +1,17 @@
+import About from '@/components/About'
 import Footer from '@/components/footer'
-import Image from 'next/image'
 import Navbar from "@/components/Navbar";
-
+import Projects from '@/components/Projects';
 
 const Home = () => {
   return (
-    <div>
+    <>
       <Navbar />
-     <Footer />
-    </div>
-  );
-};
+      <About />
+      <Projects />
+      <Footer />
+    </>
+  )
+}
 
-export default Home;
+export default Home

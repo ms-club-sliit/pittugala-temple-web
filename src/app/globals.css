@@ -16,14 +16,39 @@
   }
 }
 
+.about-top-ribbon {
+  background-image: url('/static/About-Top.png');
+  background-repeat: no-repeat;
+  background-size: 68%;
+  background-position: right;
+}
+
+.about-bottom-ribbon {
+  background-image: url('/static/About-Bottom.png');
+  background-repeat: no-repeat;
+  background-size: 60%;
+  background-position: left;
+}
+
+@media screen and (max-width: 768px) {
+  .about-top-ribbon {
+    background-size: 40%;
+    background-position: right;
+  }
+
+  .about-bottom-ribbon {
+    background-size: 50%;
+    background-position: left;
+  }
+}
+
 body {
   color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
+  background: linear-gradient(to bottom,
       transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+      rgb(var(--background-end-rgb))) rgb(var(--background-start-rgb));
+  margin: 0;
+  padding: 0;
 }
 
 .hide-right {
@@ -71,3 +96,6 @@ body {
     opacity: 1;
   }
 }
+
+
+
