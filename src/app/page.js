@@ -1,7 +1,7 @@
 import About from '@/components/About'
 import Footer from '@/components/footer'
-import Navbar from "@/components/Navbar";
-import Projects from '@/components/Projects';
+import Navbar from '@/components/Navbar'
+import Projects from '@/components/projects'
 
 const Home = () => {
   return (
