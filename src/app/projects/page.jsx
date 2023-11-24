@@ -14,6 +14,7 @@ const DhammaSchoolPage = () => {
             src="/static/coverproject.png "
             width={500}
             height={100}
+            alt="project images"
           />
         </div>
         <div className="block my-12">
