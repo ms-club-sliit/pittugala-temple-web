@@ -46,8 +46,8 @@ const About = () => {
                 <div className="flex justify-center items-center mt-2 h-40 about-bottom-ribbon">
                     <Link
                         href="#"
-                        className="bg-orange hover:bg-light-orange text-white font-bold py-2 px-4 rounded mb-20">
-                        Find out more <FontAwesomeIcon icon={faAngleRight} className="h-4 w-4" />
+                        className="bg-orange hover:bg-light-orange text-white font-bold py-2 px-4 rounded">
+                        Find out more {'>'}
                     </Link>
                 </div>
             </div>

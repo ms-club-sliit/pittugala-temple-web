@@ -11,15 +11,15 @@ export default function Discover() {
       <div className="relative bg-white w-full flex justify-end">
         <img
           className="w-7/12 "
-          src="./static/discover.png"
+          src="./static/templeImage.jpg"
           alt="discover image"
         />
         <div className="absolute inset-0 bg-gradient-to-r from-white from-45% to-transparent"></div>
         <div className="absolute inset-0 w-8/12 pl-32 ">
-          <h1 className="text-3xl my-10 font-bold">
+          <h1 className="text-3xl my-10 font-bold text-black">
             Sri Sudarmaramaya <br /> Temple
           </h1>
-          <p className="w-1/2">
+          <p className="w-1/2 text-black">
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus
             tempora, quibusdam nemo, nulla quisquam explicabo optio blanditiis
             at sunt aliquid quod eos atque expedita. Voluptate deserunt mollitia
