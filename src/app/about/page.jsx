@@ -1,13 +1,10 @@
 'use client'
-import Navbar from '@/components/Navbar'
-import Footer from '@/components/footer'
 import React, { useEffect } from 'react'
 import historyData from '@/data/HistoryData.json'
 
 const Image = 'image'
 
 const About = () => {
-
   useEffect(() => {
     const observer = new IntersectionObserver((entries) => {
       entries.forEach((entry) => {
@@ -37,7 +34,6 @@ const About = () => {
 
   return (
     <>
-      <Navbar />
       <div className="min-h-screen w-full bg-white px-[40px] py-[20px] overflow-hidden">
         <div className="max-w-screen-xl mx-auto">
           <div className="grid gap-[40px]">
@@ -86,7 +82,11 @@ const About = () => {
                               : 'border-l-[4px] lg:border-l-[2px] order-2'
                           }`}
                         >
-                          <div className={`w-[240px] h-[150px] xs:w-[300px] xs:h-[180px] sm:w-[400px] sm:h-[250px] lg:w-[360px] lg:h-[220px] ${index%2 == 0 ? 'hide-right' : 'hide-left'}`}>
+                          <div
+                            className={`w-[240px] h-[150px] xs:w-[300px] xs:h-[180px] sm:w-[400px] sm:h-[250px] lg:w-[360px] lg:h-[220px] ${
+                              index % 2 == 0 ? 'hide-right' : 'hide-left'
+                            }`}
+                          >
                             <img
                               className="object-cover w-[240px] h-[150px] xs:w-[300px] xs:h-[180px] sm:w-[400px] sm:h-[250px] lg:w-[360px] lg:h-[220px]"
                               src={`./static/${item.image}`}
@@ -100,7 +100,11 @@ const About = () => {
                               : 'border-l-[4px] lg:border-r-[2px] lg:border-l-0 order-1'
                           }`}
                         >
-                          <div className={`grid gap-[20px] lg:gap-[0px] text-black w-[240px] xs:w-[300px] sm:w-[400px] lg:w-[360px] ${index%2 == 0 ? 'hide-left' : 'hide-right'}`}>
+                          <div
+                            className={`grid gap-[20px] lg:gap-[0px] text-black w-[240px] xs:w-[300px] sm:w-[400px] lg:w-[360px] ${
+                              index % 2 == 0 ? 'hide-left' : 'hide-right'
+                            }`}
+                          >
                             <div className="font-bold">{item.year}</div>
                             <div>{item.description}</div>
                           </div>
@@ -117,7 +121,6 @@ const About = () => {
           </div>
         </div>
       </div>
-      <Footer />
     </>
   )
 }
