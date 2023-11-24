@@ -28,7 +28,7 @@ export default function Discover() {
           <div className="w-1/2 flex space-x-6 mt-20 ">
             <button
               onClick={() => {
-                router.push('/dhamma-school')
+                router.push('/dhammaSchool')
               }}
               className="bg-[#740000] rounded-full px-6 py-3 text-white"
             >
@@ -36,7 +36,7 @@ export default function Discover() {
             </button>
             <button
               onClick={() => {
-                router.push('#')
+                router.push('/gallery')
               }}
               className="rounded-full font-semibold text-[#740000] border-2 border-[#740000] px-6 py-3"
             >
