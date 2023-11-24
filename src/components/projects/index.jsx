@@ -28,7 +28,7 @@ const Projects = () => {
                     <Link
                         href="#"
                         className="bg-orange hover:bg-light-orange text-white font-bold py-2 px-4 rounded">
-                        Find out more <FontAwesomeIcon icon={faAngleRight} className="h-4 w-4" />
+                        Find out more {'>'}
                     </Link>
                 </div>
             </div>
