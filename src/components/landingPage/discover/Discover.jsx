@@ -1,8 +1,6 @@
 'use client'
-import React from 'react'
 import { useRouter } from 'next/navigation'
-
-export default function index() {
+export default function Discover() {
   const router = useRouter()
   return (
     <div className="bg-white">
