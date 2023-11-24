@@ -30,7 +30,7 @@ const Projects = () => {
         </div>
         <div className="flex justify-center items-center mt-8">
           <Link
-            href="#"
+            href="/project"
             className="bg-orange hover:bg-light-orange text-white font-bold py-2 px-4 rounded"
           >
             Find out more {'>'}

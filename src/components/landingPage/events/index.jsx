@@ -54,8 +54,9 @@ export default function index() {
       </div>
       <div className="mt-8">
         <Link
-          href="#"
-          className="bg-orange hover:bg-light-orange text-white font-bold py-2 px-4 rounded">
+          href="/events"
+          className="bg-orange hover:bg-light-orange text-white font-bold py-2 px-4 rounded"
+        >
           Find out more {'>'}
         </Link>
       </div>
