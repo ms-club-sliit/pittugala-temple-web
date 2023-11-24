@@ -9,11 +9,9 @@ const DhammaSchoolPage = () => {
           </p>
         </div>
         <div className="block my-12">
-          <Image
+          <img
             className=" w-full"
             src="/static/coverproject.jpeg "
-            width={500}
-            height={100}
             alt="project images"
           />
         </div>
