@@ -3,7 +3,7 @@ import { useRouter } from 'next/navigation'
 export default function Discover() {
   const router = useRouter()
   return (
-    <div className="bg-white">
+    <div className="bg-white text-black">
       <marquee hspace="0" className="bg-[#E35F00] h-7 text-white align-middle">
         Welcome! This is the official website of Sri Sudarmaramaya Temple,
         Malabe, Colombo.
