@@ -29,7 +29,6 @@ export default function Discover() {
             Lorem ipsum dolor sit, amet consectetur adipisicing elit.
             Reprehenderit aut animi, aspernatur ducimus dolorem inventore
             temporibus, libero nam in possimus accusantium facere quod non dicta
-            voluptatem laboriosam
 
           </p>
           <div className="w-8/12 xl:w-1/2 flex space-x-2 xl:space-x-6 mt-2 xl:mt-20 ">
