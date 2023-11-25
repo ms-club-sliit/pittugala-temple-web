@@ -72,23 +72,23 @@ const Footer = () => {
               <h2 className="mb-6 text-xl font-semibold uppercase">Links</h2>
               <ul className="font-medium">
                 <li className="mb-4">
-                  <Link href="#" className="hover:underline">
+                  <Link href="/about" className="hover:underline">
                     About
                   </Link>
                 </li>
                 <li className="mb-4">
-                  <Link href="#" className="hover:underline">
+                  <Link href="/projects" className="hover:underline">
                     Projects
                   </Link>
                 </li>
                 <li className="mb-4">
-                  <Link href="#" className="hover:underline">
+                  <Link href="/events" className="hover:underline">
                     Events
                   </Link>
                 </li>
                 <li className="mb-4">
-                  <Link href="#" className="hover:underline">
-                    Contract
+                  <Link href="/dhammaSchool" className="hover:underline">
+                    Dhamma School
                   </Link>
                 </li>
               </ul>
