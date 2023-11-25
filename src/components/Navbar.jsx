@@ -17,15 +17,15 @@ const Navbar = () => {
         <div
           className={`text-center ${isMobileMenuOpen ? 'w-full' : 'w-auto'}`}
         >
-   <Link href="/">
-          <Image
-            src="/static/Logo.png"
-            alt="Website Logo"
-            width={168}
-            height={34}
-            className="md:mx-auto"
-          />
-           </Link>
+          <Link href="/">
+            <Image
+              src="/static/logo-dharma-chakra.png"
+              alt="Website Logo"
+              width={35}
+              height={34}
+              className="md:mx-auto"
+            />
+          </Link>
         </div>
         <div className="hidden md:block">
           <ul className="flex space-x-6 pr-20">
@@ -53,9 +53,8 @@ const Navbar = () => {
         </div>
       </div>
       <ul
-        className={`md:hidden ${
-          isMobileMenuOpen ? 'block' : 'hidden'
-        } border-t border-black`}
+        className={`md:hidden ${isMobileMenuOpen ? 'block' : 'hidden'
+          } border-t border-black`}
       >
         <div className="flex flex-col items-center">
           <li>

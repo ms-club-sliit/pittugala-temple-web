@@ -1,0 +1,10 @@
+.gallery-container {
+    columns: 3; /* Set the number of columns (3 images per row) */
+    column-gap: 0; /* Adjust the gap between columns */
+  
+    .gallery-item {
+      break-inside: avoid; /* Prevent images from breaking across columns */
+      margin: 0 5px; /* Add spacing between items */
+    }
+  }
+  

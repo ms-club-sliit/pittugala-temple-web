@@ -1,4 +1,6 @@
 import Image from 'next/image'
+import Link from 'next/link'
+
 export default function index() {
   const events = [
     {
@@ -29,7 +31,7 @@ export default function index() {
 
   return (
     <div className="p-8 hidden sm:flex flex-col place-items-center w-full bg-white ">
-      <h1 className="text-4xl font-bold mb-8">Events</h1>
+      <h1 className="text-4xl font-bold mb-8 text-black">Events</h1>
       <div className="  grid grid-cols-4   w-11/12 drop-shadow">
         {events.map((event) => (
           <div key={event.id} className=" rounded-sm w-72 bg-[#FEF9F5]">
@@ -42,18 +44,21 @@ export default function index() {
             />
 
             <div className="p-2">
-              <h2 className=" text-lg md:text-2xl font-medium mb-2 md:mb-4">
+              <h2 className=" text-lg md:text-2xl font-medium mb-2 md:mb-4 text-black">
                 {event.topic}
               </h2>
-              <p className="mb-4 hidden md:flex">{event.dis}</p>
+              <p className="mb-4 hidden md:flex text-black">{event.dis}</p>
             </div>
           </div>
         ))}
       </div>
       <div className="mt-8">
-        <button className="bg-orange-500 text-white py-2 px-4 rounded-md  ">
-          Find out more <span className="text-xl">&rsaquo;</span>
-        </button>
+        <Link
+          href="/events"
+          className="bg-orange hover:bg-light-orange text-white font-bold py-2 px-4 rounded"
+        >
+          Find out more {'>'}
+        </Link>
       </div>
     </div>
   )
