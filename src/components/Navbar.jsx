@@ -39,7 +39,7 @@ const Navbar = () => {
               <Link href="/projects">Projects</Link>
             </li>
             <li className="pl-5">
-              <Link href="/contact">Contact</Link>
+              <Link href="/dhammaSchool">Dhamma School</Link>
             </li>
           </ul>
         </div>
@@ -58,16 +58,16 @@ const Navbar = () => {
       >
         <div className="flex flex-col items-center">
           <li>
-            <a href="#">About</a>
+            <a href="/about">About</a>
           </li>
           <li>
             <a href="/events">Events</a>
           </li>
           <li>
-            <a href="#">Projects</a>
+            <a href="/projects">Projects</a>
           </li>
           <li>
-            <a href="#">Contact</a>
+            <a href="/dhammaSchool">Dhamma School</a>
           </li>
         </div>
       </ul>
