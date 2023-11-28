@@ -19,10 +19,10 @@ const Navbar = () => {
         >
           <Link href="/">
             <Image
-              src="/static/logo-dharma-chakra.png"
+              src="/static/pittugala-temple-web-logo.png"
               alt="Website Logo"
-              width={35}
-              height={34}
+              width={250}
+              height={300}
               className="md:mx-auto"
             />
           </Link>
@@ -34,6 +34,9 @@ const Navbar = () => {
             </li>
             <li className="pl-5">
               <Link href="/events">Events</Link>
+            </li>
+            <li className="pl-5">
+              <Link href="/gallery">Gallery</Link>
             </li>
             <li className="pl-5">
               <Link href="/projects">Projects</Link>
@@ -53,8 +56,9 @@ const Navbar = () => {
         </div>
       </div>
       <ul
-        className={`md:hidden ${isMobileMenuOpen ? 'block' : 'hidden'
-          } border-t border-black`}
+        className={`md:hidden ${
+          isMobileMenuOpen ? 'block' : 'hidden'
+        } border-t border-black`}
       >
         <div className="flex flex-col items-center">
           <li>
@@ -62,6 +66,9 @@ const Navbar = () => {
           </li>
           <li>
             <a href="/events">Events</a>
+          </li>
+          <li>
+            <a href="/gallery">Gallery</a>
           </li>
           <li>
             <a href="/projects">Projects</a>

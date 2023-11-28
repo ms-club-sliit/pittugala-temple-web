@@ -19,14 +19,14 @@ const Footer = () => {
               <div className="mb-6 md:mb-0">
                 <a href="#" className="flex items-center">
                   <img
-                    src="/static/logo-dharma-chakra.png"
+                    src="/static/pittugala-temple-web-logo.png"
                     className="h-12 mr-3"
                     alt="Pittugala template logo"
                   />
                 </a>
                 <p className="my-8 text-lg">
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam
-                  vehicula
+                  මාලබේ පිට්ටුගල ශ්‍රී සුදර්ශනාරාමය අවුරුදු 300 කට වඩා පැරණි
+                  පුරාණ මහා විහාරයකි.
                 </p>
 
                 <div className="flex mt-4 space-x-5 sm:justify-start sm:mt-0">
@@ -99,10 +99,14 @@ const Footer = () => {
               </h2>
               <ul className="text-black font-medium">
                 <li className="mb-4">
-                  <span>+94713990912</span>
+                  <a href="tel:+94713990912">
+                    <span>+94 71 399 0912</span>
+                  </a>
                 </li>
                 <li className="mb-4">
-                  <span>srisudharmaramaya@gmail.com</span>
+                  <a href="mailto:srisudharmaramaya@gmail.com">
+                    <span>srisudharmaramaya@gmail.com</span>
+                  </a>
                 </li>
                 <li className="mb-4">
                   <span>Sri Sudarmaramaya Temple, Malabe, Colombo.</span>
