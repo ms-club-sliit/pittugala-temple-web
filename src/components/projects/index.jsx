@@ -1,37 +1,43 @@
 'use client'
-import React, { useState, useEffect } from 'react'
-import Image from 'next/image'
-import projectDetails from './projectDetails.json'
+import React from 'react'
+import Link from 'next/link'
+
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faAngleRight } from '@fortawesome/free-solid-svg-icons'
+
+import { PROJECT_TEXT } from '../../consts/consts'
 
 const Projects = () => {
-  const [projects, setProjects] = useState(projectDetails)
-
-  useEffect(() => {
-    setProjects(projectDetails)
-  }, [])
   return (
-    <div className="min-h-screen bg-white flex flex-col pt-10">
-      <h1 className="text-2xl md:text-4xl font-bold text-center">
-        {projects.projectName}
-      </h1>
-      <h3 className="text-xl md:text-2xl mt-2 text-center mt-3">
-        {projects.projectBio}
-      </h3>
-      <Image
-        src="/static/projectSample.png"
-        alt="Project Image"
-        width={1082}
-        height={317}
-        className="mt-4 w-full px-10 md:px-20"
-      />
-      <div className="text-center mt-12 mb-12 mx-20 md:mx-40">
-        {projects.paragraphs.map((para, index) => (
-          <p className="mt-6" key={index}>
-            {para}
+    <>
+      <div className="mx-auto w-full p-4 py-6 lg:py-8 bg-white">
+        <div className="flex justify-center items-center">
+          <h2 class="mb-4 text-black font-extrabold leading-none tracking-tight text-4xl md:text-4xl lg:text-4xl">
+            Projects
+          </h2>
+        </div>
+        <div className="flex justify-center items-center">
+          <p class="mb-6 text-l font-normal text-black w-[90%]">
+            {PROJECT_TEXT}
           </p>
-        ))}
+        </div>
+        <div className="flex justify-center items-center">
+          <img
+            src="/static/coverproject.jpeg"
+            className="w-[90%]"
+            alt="Projects Landing Image"
+          />
+        </div>
+        <div className="flex justify-center items-center mt-8">
+          <Link
+            href="/projects"
+            className="bg-orange hover:bg-light-orange text-white font-bold py-2 px-4 rounded"
+          >
+            Find out more {'>'}
+          </Link>
+        </div>
       </div>
-    </div>
+    </>
   )
 }
 
