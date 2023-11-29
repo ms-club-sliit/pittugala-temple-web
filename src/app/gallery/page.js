@@ -1,26 +1,25 @@
 'use client'
 import Image from 'next/image'
 import GalleryNavigation from '@/components/gallery/gallerynavigation'
-import Box from '@mui/material/Box'
 import React, { useEffect, useState } from 'react'
 import '../../../src/CSS/gallery.css'
-import { ImageList, ImageListItem, Container } from '@mui/material'
 import galleryData from '@/data/gallery.json'
 
 
 const Gallery = () => {
-  const [selectedCategory, setSelectedCategory] = useState('All')
 
-  const handleCategoryChange = (category) => {
+  const [selectedCategory, setSelectedCategory] = useState('All') //Used to filter the gallery data
+
+  const handleCategoryChange = (category) => { //Used to change the category of the gallery
     setSelectedCategory(category)
   }
 
-  const filteredGalleryData =
+  const filteredGalleryData = 
     selectedCategory === 'All'
       ? galleryData.galleryData
       : galleryData.galleryData.filter((item) => item.category === selectedCategory)
 
-  const numberOfImages = filteredGalleryData.length;
+  const numberOfImages = filteredGalleryData.length; //Used to determine the number of images in the gallery
 
   return (
     <div className="bg-white">
