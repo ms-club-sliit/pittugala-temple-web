@@ -13,7 +13,11 @@ const Navbar = () => {
 
   return (
     <nav className="bg-white p-4 text-black font-semibold">
-      <div className="container mx-auto flex justify-between items-center pl-20">
+      <div
+        className={`container mx-auto flex justify-between items-center ${
+          isMobileMenuOpen ? 'flex-col items-center' : 'pl-20'
+        }`}
+      >
         <div
           className={`text-center ${isMobileMenuOpen ? 'w-full' : 'w-auto'} ${
             isMobileMenuOpen ? 'mx-auto' : ''
@@ -25,7 +29,9 @@ const Navbar = () => {
               alt="pittugala-temple-web-logo"
               width={250}
               height={300}
-              className={`md:mx-auto ${isMobileMenuOpen ? 'mx-auto' : ''}`}
+              className={`md:mx-auto ${
+                isMobileMenuOpen ? 'mx-auto text-center' : ''
+              }`}
             />
           </Link>
         </div>
