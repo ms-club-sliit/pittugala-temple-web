@@ -16,12 +16,12 @@ const Footer = () => {
         <div className="text-black">
           <div className="grid gap-6 lg:gap-8 grid-cols-12">
             <div className="lg:col-span-4 col-span-12">
-              <div className="mb-6 md:mb-0">
+              <div className="mb-6 md:mb-0 justify-center items-center">
                 <a href="#" className="flex items-center">
                   <img
                     src="/static/pittugala-temple-web-logo.png"
-                    className="h-12 mr-3"
-                    alt="Pittugala template logo"
+                    className="h-12 sm:h-16 md:h-20 mx-auto object-contain"
+                    alt="pittugala-temple-web-logo"
                   />
                 </a>
                 <p className="my-8 text-lg">
@@ -31,7 +31,14 @@ const Footer = () => {
 
                 <div className="flex mt-4 space-x-5 sm:justify-start sm:mt-0">
                   <Link
-                    href="#"
+                    href="https://web.facebook.com/SriTharunodayaDahamPasala"
+                    className="transition-all hover:scale-125"
+                    target="_blank"
+                  >
+                    <FontAwesomeIcon icon={faFacebook} className="h-6 w-6" />
+                  </Link>
+                  <Link
+                    href="https://web.facebook.com/srisudarshanaramatemple/"
                     className="transition-all hover:scale-125"
                     target="_blank"
                   >

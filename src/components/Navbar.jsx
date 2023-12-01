@@ -15,15 +15,17 @@ const Navbar = () => {
     <nav className="bg-white p-4 text-black font-semibold">
       <div className="container mx-auto flex justify-between items-center pl-20">
         <div
-          className={`text-center ${isMobileMenuOpen ? 'w-full' : 'w-auto'}`}
+          className={`text-center ${isMobileMenuOpen ? 'w-full' : 'w-auto'} ${
+            isMobileMenuOpen ? 'mx-auto' : ''
+          }`}
         >
-          <Link href="/">
+          <Link href="#">
             <Image
               src="/static/pittugala-temple-web-logo.png"
-              alt="Website Logo"
+              alt="pittugala-temple-web-logo"
               width={250}
               height={300}
-              className="md:mx-auto"
+              className={`md:mx-auto ${isMobileMenuOpen ? 'mx-auto' : ''}`}
             />
           </Link>
         </div>
