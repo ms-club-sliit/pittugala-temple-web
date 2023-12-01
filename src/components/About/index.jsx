@@ -24,29 +24,16 @@ const About = () => {
           </p>
         </div>
         <div className="flex justify-center items-center">
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-20 justify-center items-center">
-            <div className="p-4 w-[330px] flex flex-col items-center">
-              <Image
-                src="/static/About-Potrait.png"
-                alt="About Potrait Image"
-                width={200}
-                height={250}
-              />
-              <p className="mb-6 text-sm font-normal text-black w-60 text-center mt-5">
-                {ABOUT_POTRAIT_TEXT}
-              </p>
-            </div>
-            <div className="p-4 w-[330px] flex flex-col items-center">
-              <Image
-                src="/static/About-Potrait.png"
-                alt="About Potrait Image"
-                width={200}
-                height={250}
-              />
-              <p className="mb-6 text-sm font-normal text-black w-60 text-center mt-5">
-                {ABOUT_POTRAIT_TEXT}
-              </p>
-            </div>
+          <div className="p-4 w-[330px] flex flex-col items-center">
+            <Image
+              src="/static/AboutPotrait.jpg"
+              alt="About Potrait Image"
+              width={250}
+              height={280}
+            />
+            <p className="mb-6 text-sm font-normal text-black w-60 text-center mt-5">
+              {ABOUT_POTRAIT_TEXT}
+            </p>
           </div>
         </div>
         <div className="flex justify-center items-center mt-2 h-40 about-bottom-ribbon">
