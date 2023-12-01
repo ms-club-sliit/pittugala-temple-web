@@ -12,12 +12,12 @@ const Projects = () => {
     <>
       <div className="mx-auto w-full p-4 py-6 lg:py-8 bg-white">
         <div className="flex justify-center items-center">
-          <h2 class="mb-4 text-black font-extrabold leading-none tracking-tight text-4xl md:text-4xl lg:text-4xl">
+          <h2 className="mb-4 text-black font-extrabold leading-none tracking-tight text-4xl md:text-4xl lg:text-4xl">
             Projects
           </h2>
         </div>
         <div className="flex justify-center items-center">
-          <p class="mb-6 text-l font-normal text-black w-[90%]">
+          <p className="mb-6 text-l font-normal text-black w-[90%]">
             {PROJECT_TEXT}
           </p>
         </div>
