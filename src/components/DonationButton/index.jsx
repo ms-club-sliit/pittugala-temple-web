@@ -33,10 +33,29 @@ export default function DonationButton() {
         left: '50%',
         transform: 'translate(-50%, -50%)',
         width: 400,
-        bgcolor: 'orange',
+        bgcolor: 'white',
         boxShadow: 24,
         p: 4,
     };
+
+    const headerStyle = {
+        display: 'flex',
+        flexDirection: 'column',
+        alignItems: 'center',
+        justifyContent: 'center',
+        color: '#FF7518',
+        fontWeight: 'bold',
+    }
+
+    const bodyStyle = {
+        display: 'flex',
+        flexDirection: 'column',
+        alignItems: 'center',
+        justifyContent: 'center',
+        color: 'black',
+        gap: '1rem',
+        mt: 2,
+    }
 
     return (
         <>
@@ -65,11 +84,14 @@ export default function DonationButton() {
                 >
                     <Fade in={open}>
                         <Box sx={modalStyle}>
-                            <Typography id="transition-modal-title" variant="h6" component="h2">
-                                Donations
+                            <Typography id="transition-modal-title" variant="h5" component="h2" style={headerStyle}>
+                                මුදල් පරිත්‍යාග
                             </Typography>
-                            <Typography id="transition-modal-description" sx={{ mt: 2 }}>
-                                Duis mollis, est non commodo luctus, nisi erat porttitor ligula.
+                            <Typography id="transition-modal-description" sx={{ mt: 2 }} style={bodyStyle}>
+                                විහාරාධිපති <br />
+                                ශ්‍රී සුදර්ශනාරාම පුරාණ විහාරය - මාලබේ<br />
+                                ලංකා බැංකුව මාලබේ ශාඛව - 8576912<br />
+                                0715608209
                             </Typography>
                         </Box>
                     </Fade>
