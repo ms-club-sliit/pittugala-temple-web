@@ -17,7 +17,7 @@ const Footer = () => {
           <div className="grid gap-6 lg:gap-8 grid-cols-12">
             <div className="lg:col-span-4 col-span-12">
               <div className="mb-6 md:mb-0 justify-center items-center">
-                <a href="#" className="flex items-center">
+                <a href="/" className="flex items-center">
                   <img
                     src="/static/pittugala-temple-web-logo.png"
                     className="h-12 sm:h-16 md:h-20 mx-auto object-contain"
