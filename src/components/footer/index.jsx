@@ -16,22 +16,29 @@ const Footer = () => {
         <div className="text-black">
           <div className="grid gap-6 lg:gap-8 grid-cols-12">
             <div className="lg:col-span-4 col-span-12">
-              <div className="mb-6 md:mb-0">
-                <a href="#" className="flex items-center">
+              <div className="mb-6 md:mb-0 justify-center items-center">
+                <a href="/" className="flex items-center">
                   <img
-                    src="/static/logo-dharma-chakra.png"
-                    className="h-12 mr-3"
-                    alt="Pittugala template logo"
+                    src="/static/pittugala-temple-web-logo.png"
+                    className="h-12 sm:h-16 md:h-20 mx-auto object-contain"
+                    alt="pittugala-temple-web-logo"
                   />
                 </a>
                 <p className="my-8 text-lg">
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam
-                  vehicula
+                  මාලබේ පිට්ටුගල ශ්‍රී සුදර්ශනාරාමය අවුරුදු 300 කට වඩා පැරණි
+                  පුරාණ මහා විහාරයකි.
                 </p>
 
                 <div className="flex mt-4 space-x-5 sm:justify-start sm:mt-0">
                   <Link
-                    href="#"
+                    href="https://web.facebook.com/SriTharunodayaDahamPasala"
+                    className="transition-all hover:scale-125"
+                    target="_blank"
+                  >
+                    <FontAwesomeIcon icon={faFacebook} className="h-6 w-6" />
+                  </Link>
+                  <Link
+                    href="https://web.facebook.com/srisudarshanaramatemple/"
                     className="transition-all hover:scale-125"
                     target="_blank"
                   >
@@ -99,10 +106,14 @@ const Footer = () => {
               </h2>
               <ul className="text-black font-medium">
                 <li className="mb-4">
-                  <span>+94713990912</span>
+                  <a href="tel:+94713990912">
+                    <span>+94 71 399 0912</span>
+                  </a>
                 </li>
                 <li className="mb-4">
-                  <span>srisudharmaramaya@gmail.com</span>
+                  <a href="mailto:srisudharmaramaya@gmail.com">
+                    <span>srisudharmaramaya@gmail.com</span>
+                  </a>
                 </li>
                 <li className="mb-4">
                   <span>Sri Sudarmaramaya Temple, Malabe, Colombo.</span>

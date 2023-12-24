@@ -13,17 +13,22 @@ const Navbar = () => {
 
   return (
     <nav className="bg-white p-4 text-black font-semibold">
-      <div className="container mx-auto flex justify-between items-center pl-20">
+      <div
+        className={`container mx-auto flex justify-between items-center ${isMobileMenuOpen ? 'flex-col items-center' : 'pl-20'
+          }`}
+      >
         <div
-          className={`text-center ${isMobileMenuOpen ? 'w-full' : 'w-auto'}`}
+          className={`text-center ${isMobileMenuOpen ? 'w-full' : 'w-auto'} ${isMobileMenuOpen ? 'mx-auto' : ''
+            }`}
         >
           <Link href="/">
             <Image
-              src="/static/logo-dharma-chakra.png"
-              alt="Website Logo"
-              width={35}
-              height={34}
-              className="md:mx-auto"
+              src="/static/pittugala-temple-web-logo.png"
+              alt="pittugala-temple-web-logo"
+              width={250}
+              height={300}
+              className={`md:mx-auto ${isMobileMenuOpen ? 'mx-auto text-center' : ''
+                }`}
             />
           </Link>
         </div>
@@ -34,6 +39,9 @@ const Navbar = () => {
             </li>
             <li className="pl-5">
               <Link href="/events">Events</Link>
+            </li>
+            <li className="pl-5">
+              <Link href="/gallery">Gallery</Link>
             </li>
             <li className="pl-5">
               <Link href="/projects">Projects</Link>
@@ -62,6 +70,9 @@ const Navbar = () => {
           </li>
           <li>
             <a href="/events">Events</a>
+          </li>
+          <li>
+            <a href="/gallery">Gallery</a>
           </li>
           <li>
             <a href="/projects">Projects</a>
