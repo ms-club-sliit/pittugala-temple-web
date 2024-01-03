@@ -1,15 +1,15 @@
+import LandingEvents from '@/components/landingPage/events'
 import About from '@/components/About'
-import Footer from '@/components/footer'
-import Navbar from "@/components/Navbar";
-import Projects from '@/components/Projects';
+import Projects from '@/components/projects'
+import Discover from '@/components/landingPage/discover/Discover'
 
 const Home = () => {
   return (
     <>
-      <Navbar />
+      <Discover />
       <About />
       <Projects />
-      <Footer />
+      <LandingEvents />
     </>
   )
 }

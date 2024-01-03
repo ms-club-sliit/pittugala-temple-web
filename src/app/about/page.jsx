@@ -1,13 +1,10 @@
 'use client'
-import Navbar from '@/components/Navbar'
-import Footer from '@/components/footer'
 import React, { useEffect } from 'react'
 import historyData from '@/data/HistoryData.json'
 
 const Image = 'image'
 
 const About = () => {
-
   useEffect(() => {
     const observer = new IntersectionObserver((entries) => {
       entries.forEach((entry) => {
@@ -37,7 +34,6 @@ const About = () => {
 
   return (
     <>
-      <Navbar />
       <div className="min-h-screen w-full bg-white px-[40px] py-[20px] overflow-hidden">
         <div className="max-w-screen-xl mx-auto">
           <div className="grid gap-[40px]">
@@ -119,7 +115,6 @@ const About = () => {
           </div>
         </div>
       </div>
-      <Footer />
     </>
   )
 }

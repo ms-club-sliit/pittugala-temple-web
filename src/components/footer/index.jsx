@@ -19,7 +19,7 @@ const Footer = () => {
               <div className="mb-6 md:mb-0">
                 <a href="#" className="flex items-center">
                   <img
-                    src="/static/temple-logo.png"
+                    src="/static/logo-dharma-chakra.png"
                     className="h-12 mr-3"
                     alt="Pittugala template logo"
                   />
@@ -72,23 +72,23 @@ const Footer = () => {
               <h2 className="mb-6 text-xl font-semibold uppercase">Links</h2>
               <ul className="font-medium">
                 <li className="mb-4">
-                  <Link href="#" className="hover:underline">
+                  <Link href="/about" className="hover:underline">
                     About
                   </Link>
                 </li>
                 <li className="mb-4">
-                  <Link href="#" className="hover:underline">
+                  <Link href="/projects" className="hover:underline">
                     Projects
                   </Link>
                 </li>
                 <li className="mb-4">
-                  <Link href="#" className="hover:underline">
+                  <Link href="/events" className="hover:underline">
                     Events
                   </Link>
                 </li>
                 <li className="mb-4">
-                  <Link href="#" className="hover:underline">
-                    Contract
+                  <Link href="/dhammaSchool" className="hover:underline">
+                    Dhamma School
                   </Link>
                 </li>
               </ul>
