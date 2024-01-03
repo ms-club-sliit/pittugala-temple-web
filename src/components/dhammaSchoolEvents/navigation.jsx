@@ -39,9 +39,8 @@ const links = [
   { label: 'Charity', key: 'Charity' },
 ]
 
-const EventNavigation = () => {
+const EventNavigation = ({ activeLink, setActiveLink, onSearch }) => {
   const [isMobileMenuOpen, setMobileMenuOpen] = useState(false)
-  const [activeLink, setActiveLink] = useState('')
 
   const toggleMobileMenu = () => {
     setMobileMenuOpen(!isMobileMenuOpen)
@@ -81,6 +80,7 @@ const EventNavigation = () => {
           InputProps={{
             endAdornment: <SearchIcon style={{ color: 'grey' }} />,
           }}
+          onChange={onSearch}
         />
 
         {isMobileMenuOpen && (
