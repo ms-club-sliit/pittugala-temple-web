@@ -37,22 +37,22 @@
         },
         {
             "id": 6,
-            "category": "all",
-            "image": "Poya_Day_3.jpeg",
-            "width": "617",
-            "height": "400"
-        },
-        {
-            "id": 7,
             "category": "bodhi_pooja",
             "image": "Bodhi_Pooja_2.jpeg",
             "width": "617",
             "height": "400"
         },
         {
-            "id": 8,
+            "id": 7,
             "category": "poya_day",
             "image": "Poya_Day_4.jpeg",
+            "width": "617",
+            "height": "400"
+        },
+        {
+            "id": 8,
+            "category": "all",
+            "image": "Poya_Day_3.jpeg",
             "width": "617",
             "height": "400"
         },
@@ -69,6 +69,21 @@
             "image": "Poya_Day.jpeg",
             "width": "617",
             "height": "400"
+        },
+        {
+            "id": 11,
+            "category": "all",
+            "image": "New_Year_2.jpeg",
+            "width": "617",
+            "height": "400"
+        },
+        {
+            "id": 12,
+            "category": "all",
+            "image": "New_Year_1.jpeg",
+            "width": "617",
+            "height": "400"
         }
+
     ]
 }

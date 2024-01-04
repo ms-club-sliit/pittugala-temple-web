@@ -40,7 +40,7 @@ const Gallery = () => {
               <img
                 src={`/static/gallery-images/${item.image}`}
                 alt={item.category}
-                className="w-full rounded-lg w-full h-full"
+                className="w-full rounded-lg h-60 object-fill"
               />
             </div>
 
@@ -48,18 +48,18 @@ const Gallery = () => {
 
         </div>
       ) : (
-        <div className="grid grid-cols-3 gap-4 w-10/12 ml-[10%] mb-10 mt-10 ">
+        <div className="grid grid-cols-3 gap-4 w-10/12   ml-[10%] mb-10 mt-10  ">
 
           {filteredGalleryData.map((item, index) => (
             <div
               key={item.id}
-              className={`${index === 1 || index === 5 ? 'col-span-2' : 'col-span-1'
+              className={`${index === 1 || index === 5 || index === 11? 'col-span-2' : 'col-span-1'
                 }`}
             >
               <img
                 src={`/static/gallery-images/${item.image}`}
                 alt={item.category}
-                className="w-full rounded-lg w-full h-full"
+                className="w-full rounded-lg h-60 object-fill"
               />
             </div>
 
