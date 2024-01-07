@@ -1,24 +1,74 @@
 {
     "data": [
       {
-        "year": "2018 - 2022",
-        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam vehicula libero nec augue molestie, non interdum tellus porttitor. Sed non ultrices dui. Cras auctor porttitor turpis in feugiat. Integer feugiat, ipsum quis commodo pharetra, nisl felis bibendum libero",
-        "image": "sri-sudharmaramaya.png"
+        "year": "",
+        "description": "ශ්‍රී සුදර්ශනාරාම පුරාණ මහා විහාරස්ථානයේ ආරම්භය වසර 1800ක් පමණ බව සඳහන් වේ",
+        "image": ""
       },
       {
-        "year": "2018 - 2022",
-        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam vehicula libero nec augue molestie, non interdum tellus porttitor. Sed non ultrices dui. Cras auctor porttitor turpis in feugiat. Integer feugiat, ipsum quis commodo pharetra, nisl felis bibendum libero",
-        "image": "sri-sudharmaramaya.png"
+        "year": "1944.10.29",
+        "description": "දහම් පාසල ආරම්භ කර ඇත වදවල වනරතන හිමියන්ගේ අනුශාසකත්වයෙන් රත්නකන්දෙ සීලරත්න හිමියන්ගේ ප්‍රධානත්වයෙන් ආරම්භ වී ඇත",
+        "image": ""
       },
       {
-        "year": "2018 - 2022",
-        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam vehicula libero nec augue molestie, non interdum tellus porttitor. Sed non ultrices dui. Cras auctor porttitor turpis in feugiat. Integer feugiat, ipsum quis commodo pharetra, nisl felis bibendum libero",
-        "image": "sri-sudharmaramaya.png"
+        "year": "1952",
+        "description": "විහාරාධිපති පදවියට බුත්පිටියේ පියනන්ද හිමි පත්විය උන්වහන්සේ දහම් පාසල දියුණු කිරීමට කට්ටිය යුතු සිදුකරන ලදී.",
+        "image": ""
       },
       {
-        "year": "2018 - 2022",
-        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam vehicula libero nec augue molestie, non interdum tellus porttitor. Sed non ultrices dui. Cras auctor porttitor turpis in feugiat. Integer feugiat, ipsum quis commodo pharetra, nisl felis bibendum libero",
-        "image": "sri-sudharmaramaya.png"
+        "year": "1944.06.11",
+        "description": "බුත්පිටියේ පියනන්ද හිමියන්ගේ උපසම්පදා පුණ්‍ය කර්මය සිදුව ඇත.උන්වහන්සේ පැවිදි දිවියට පත්ව ඇත්තේ 1935 වසරේදීය පූජ්‍ය අකරවිට සරණ තිස්ස හිමි සහ වදවල වනරතන හිමිවරු උන්වහන්සේගේ ආචාර්යවරු වීම උන්වහන්සේ විසින්ද විහාරස්ථානය සිදුකළ පාරම්පරික කැඩුම් බිඳු වෙදකම සිදුකරන ලදී",
+        "image": ""
+      },
+      {
+        "year": "1982.06.06 - 1982.06.20",
+        "description": "අභිනව විහාරස්ථානයේ නේත්‍ර ප්‍රතිස්ථාපන පින්කම පවත්වන ලදී.",
+        "image": ""
+      },
+      {
+        "year": "1986.01.31",
+        "description": "අතිගරු ජනාධිපති ජේ.ආර් ජයවර්ධන මැතිතුමා විසින් චෛත්‍යය විවෘත කරන ලදී.",
+        "image": ""
+      },
+      {
+        "year": "1985.04.22",
+        "description": "බ්ද විකාශන යන්ත්‍ර පූජාව සිදුකරන ලදී.",
+        "image": ""
+      },
+      {
+        "year": "1993.",
+        "description": "දහම් පාසලේ 50 වැනි සංවත්සර උත්සවය පවත්වන ලදී. (1943-1993 දක්වා)",
+        "image": ""
+      },
+      {
+        "year": "1991.11.19",
+        "description": "පැවිදවීම කිතුල්පේ ගුණානන්ද හිමි.",
+        "image": ""
+      },
+      {
+        "year": "1993.03.12",
+        "description": "උපසම්පදා විනය කර්ම පින්කම.",
+        "image": ""
+      },
+      {
+        "year": "1994.11.17",
+        "description": "පැවිදි වීම මහගම චන්දිම හිමි.",
+        "image": ""
+      },
+      {
+        "year": "1997.06.25",
+        "description": "බුත්පිටියේ පියනන්ද හිමි අපවත්වීම.",
+        "image": ""
+      },
+      {
+        "year": "2004.11.29",
+        "description": "දසපාරමිතා පින්කම.",
+        "image": ""
+      },
+      {
+        "year": "2003.02.11",
+        "description": "බෝධිරෝපණ පින්කම",
+        "image": ""
       }
     ]
   }

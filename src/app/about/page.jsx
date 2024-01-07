@@ -76,36 +76,30 @@ const About = () => {
                     >
                       <div className="w-full lg:flex">
                         <div
-                          className={`w-full lg:w-1/2 flex justify-center items-center border-[#740000] pt-[20px] lg:pb-[50px] px-[40px] xs:px-[50px] lg:px-[0px] ${
+                          className={`w-full lg:w-1/2 flex justify-center items-center border-[#740000] pt-[20px] lg:pb-[20px] px-[40px] xs:px-[50px] lg:px-[0px] ${
                             index % 2 == 0
                               ? 'border-l-[4px] lg:border-r-[2px] lg:border-l-0 order-1'
                               : 'border-l-[4px] lg:border-l-[2px] order-2'
                           }`}
                         >
-                          <div
-                            className={`w-[240px] h-[150px] xs:w-[300px] xs:h-[180px] sm:w-[400px] sm:h-[250px] lg:w-[360px] lg:h-[220px] ${
-                              index % 2 == 0 ? 'hide-right' : 'hide-left'
-                            }`}
-                          >
+                          <div className={`w-[240px] max-h-[150px] xs:w-[300px] xs:max-h-[180px] sm:w-[400px] sm:max-h-[250px] lg:w-[360px] lg:max-h-[220px] ${index%2 == 0 ? 'hide-right' : 'hide-left'}`}>
+                            {item.image ? (
                             <img
-                              className="object-cover w-[240px] h-[150px] xs:w-[300px] xs:h-[180px] sm:w-[400px] sm:h-[250px] lg:w-[360px] lg:h-[220px]"
+                              className="object-cover w-[240px] max-h-[150px] xs:w-[300px] xs:max-h-[180px] sm:w-[400px] sm:max-h-[250px] lg:w-[360px] lg:max-h-[220px]"
                               src={`./static/${item.image}`}
                             />
+                            ) : (<></>) }
                           </div>
                         </div>
                         <div
-                          className={`w-full lg:w-1/2 flex justify-center border-[#740000] pt-[20px] pb-[50px] px-[40px] xs:px-[50px] lg:px-[0px] ${
+                          className={`w-full lg:w-1/2 flex justify-center border-[#740000] pt-[20px] pb-[20px] px-[40px] xs:px-[50px] lg:px-[0px] ${
                             index % 2 == 0
                               ? 'border-l-[4px] lg:border-l-[2px] order-2'
                               : 'border-l-[4px] lg:border-r-[2px] lg:border-l-0 order-1'
                           }`}
                         >
-                          <div
-                            className={`grid gap-[20px] lg:gap-[0px] text-black w-[240px] xs:w-[300px] sm:w-[400px] lg:w-[360px] ${
-                              index % 2 == 0 ? 'hide-left' : 'hide-right'
-                            }`}
-                          >
-                            <div className="font-bold">{item.year}</div>
+                          <div className={`grid gap-[20px] lg:gap-[0px] text-black w-[240px] xs:w-[300px] sm:w-[400px] lg:w-[360px] ${index%2 == 0 ? 'hide-left' : 'hide-right'}`}>
+                            <div className="font-bold pb-[10px]">{item.year}</div>
                             <div>{item.description}</div>
                           </div>
                         </div>
