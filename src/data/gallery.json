@@ -17,6 +17,7 @@
         {
             "id": 3,
             "category": "bodhi_pooja",
+            
             "image": "Bodhi_Pooja.jpeg",
             "width": "617",
             "height": "400"
@@ -38,7 +39,7 @@
         {
             "id": 6,
             "category": "bodhi_pooja",
-            "image": "Bodhi_Pooja_2.jpeg",
+            "image": "New_Year_2.jpeg",
             "width": "617",
             "height": "400"
         },
@@ -52,7 +53,7 @@
         {
             "id": 8,
             "category": "all",
-            "image": "Poya_Day_3.jpeg",
+            "image": "Bhodi_Pooja_3.jpeg",
             "width": "617",
             "height": "400"
         },
@@ -73,7 +74,7 @@
         {
             "id": 11,
             "category": "all",
-            "image": "New_Year_2.jpeg",
+            "image": "Poya_Day_3.jpeg",
             "width": "617",
             "height": "400"
         },

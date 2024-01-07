@@ -29,7 +29,7 @@ const Gallery = () => {
       />
       <hr></hr>
       {numberOfImages !== 1 && numberOfImages < 5 ? (
-        <div className="grid grid-cols-3 gap-4 w-10/12 mx-auto ml-[180px] mb-10 mt-10 py-8 ">
+        <div className="grid grid-cols-3 gap-4 w-9/12 mx-auto ml-[14%] mb-10 mt-10 py-8 ">
 
           {filteredGalleryData.map((item, index) => (
             <div
@@ -48,7 +48,7 @@ const Gallery = () => {
 
         </div>
       ) : (
-        <div className="grid grid-cols-3 gap-4 w-10/12   ml-[10%] mb-10 mt-10  ">
+        <div className="grid grid-cols-3 gap-4 w-9/12 ml-[14%] mb-10 mt-10  ">
 
           {filteredGalleryData.map((item, index) => (
             <div
