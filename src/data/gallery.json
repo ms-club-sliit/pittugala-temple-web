@@ -1,90 +1,89 @@
 {
-    "galleryData": [
-        {
-            "id": 10,
-            "category": "bodhi_pooja",
-            "image": "Bhodi_Pooja_3.jpeg",
-            "width": "617",
-            "height": "400"
-        },
-        {
-            "id": 2,
-            "category": "poya_day",
-            "image": "Poya_Day_2.jpeg",
-            "width": "617",
-            "height": "400"
-        },
-        {
-            "id": 3,
-            "category": "bodhi_pooja",
-            
-            "image": "Bodhi_Pooja.jpeg",
-            "width": "617",
-            "height": "400"
-        },
-        {
-            "id": 4,
-            "category": "charity",
-            "image": "Charity.jpeg",
-            "width": "617",
-            "height": "400"
-        },
-        {
-            "id": 5,
-            "category": "katina_pooja",
-            "image": "Katina.jpeg",
-            "width": "617",
-            "height": "400"
-        },
-        {
-            "id": 6,
-            "category": "bodhi_pooja",
-            "image": "New_Year_2.jpeg",
-            "width": "617",
-            "height": "400"
-        },
-        {
-            "id": 7,
-            "category": "poya_day",
-            "image": "Poya_Day_4.jpeg",
-            "width": "617",
-            "height": "400"
-        },
-        {
-            "id": 8,
-            "category": "all",
-            "image": "Bhodi_Pooja_3.jpeg",
-            "width": "617",
-            "height": "400"
-        },
-        {
-            "id": 9,
-            "category": "poya_day",
-            "image": "Poya_Day_5.jpeg",
-            "width": "617",
-            "height": "400"
-        },
-        {
-            "id": 1,
-            "category": "poya_day",
-            "image": "Poya_Day.jpeg",
-            "width": "617",
-            "height": "400"
-        },
-        {
-            "id": 11,
-            "category": "all",
-            "image": "Poya_Day_3.jpeg",
-            "width": "617",
-            "height": "400"
-        },
-        {
-            "id": 12,
-            "category": "all",
-            "image": "New_Year_1.jpeg",
-            "width": "617",
-            "height": "400"
-        }
+  "galleryData": [
+    {
+      "id": 10,
+      "category": "bodhi_pooja",
+      "image": "Bhodi_Pooja_3.jpeg",
+      "width": "617",
+      "height": "400"
+    },
+    {
+      "id": 2,
+      "category": "poya_day",
+      "image": "Poya_Day_2.jpeg",
+      "width": "617",
+      "height": "400"
+    },
+    {
+      "id": 3,
+      "category": "bodhi_pooja",
 
-    ]
+      "image": "Bodhi_Pooja.jpeg",
+      "width": "617",
+      "height": "400"
+    },
+    {
+      "id": 4,
+      "category": "charity",
+      "image": "Charity.jpeg",
+      "width": "617",
+      "height": "400"
+    },
+    {
+      "id": 5,
+      "category": "katina_pooja",
+      "image": "Katina.jpeg",
+      "width": "617",
+      "height": "400"
+    },
+    {
+      "id": 6,
+      "category": "bodhi_pooja",
+      "image": "New_Year_2.jpeg",
+      "width": "617",
+      "height": "400"
+    },
+    {
+      "id": 7,
+      "category": "poya_day",
+      "image": "Poya_Day_4.jpeg",
+      "width": "617",
+      "height": "400"
+    },
+    {
+      "id": 8,
+      "category": "all",
+      "image": "Bhodi_Pooja_3.jpeg",
+      "width": "617",
+      "height": "400"
+    },
+    {
+      "id": 9,
+      "category": "poya_day",
+      "image": "Poya_Day_5.jpeg",
+      "width": "617",
+      "height": "400"
+    },
+    {
+      "id": 1,
+      "category": "poya_day",
+      "image": "Poya_Day.jpeg",
+      "width": "617",
+      "height": "400"
+    },
+    {
+      "id": 11,
+      "category": "all",
+      "image": "Nilagiri.jpg",
+      "width": "617",
+      "height": "400"
+    },
+    {
+      "id": 12,
+      "category": "all",
+      "image": "New_Year_1.jpeg",
+      "width": "617",
+      "height": "400"
+    }
+  ]
 }
