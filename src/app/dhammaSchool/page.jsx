@@ -8,7 +8,7 @@ const DhammaSchoolPage = () => {
 
   return (
     <div className="bg-white py-8">
-      <div className="text-black container mx-auto px-20">
+      <div className="text-black container mx-auto px-4 sm:px-10 lg:px-20">
         <div className="block mx-auto my-12 font-semibold w-full lg:w-2/4">
           <p className="text-center text-4xl lg:text-5xl mb-4 leading-normal">
             {DHAMMA_SCHOOL_HEADER}

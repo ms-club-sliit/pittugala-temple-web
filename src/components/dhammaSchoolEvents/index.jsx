@@ -29,9 +29,6 @@ const DhammaSchoolEventsPage = () => {
       case 'Information':
         return setSelectedEvents(eventFilter('Information'))
 
-      case 'Katina Pooja':
-        return setSelectedEvents(eventFilter('Katina Pooja'))
-
       case 'Bodhi Pooja':
         return setSelectedEvents(eventFilter('Bodhi Pooja'))
 
@@ -57,7 +54,7 @@ const DhammaSchoolEventsPage = () => {
         onSearch={handleSearch}
       />
       <div className="bg-white pb-12">
-        <div className="container mx-auto flex justify-between items-center pl-20 pr-20">
+        <div className="text-black container mx-auto px-4 sm:px-10 lg:px-20">
           <div className="mt-6 grid grid-cols-1 gap-x-6 gap-y-10 sm:grid-cols-2 lg:grid-cols-4 xl:gap-x-8">
             {filteredEvents.length ? (
               filteredEvents.map((event) => (

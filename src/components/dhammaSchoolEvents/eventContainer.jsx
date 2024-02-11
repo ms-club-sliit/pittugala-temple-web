@@ -1,5 +1,3 @@
-//Reusable event container
-
 import { VIEW_EVENT } from '@/consts/consts'
 import Image from 'next/image'
 
@@ -23,16 +21,19 @@ const EventContainer = ({ event }) => {
       />
       <div className="mt-4 flex justify-between">
         <div className="min-h-20 border-red-600">
-          <div className="h-10">
-            <p className="text-black mt-5 font-semibold">
+          <div className="h-15 md:h-10">
+            <p className="text-black mt-5 font-bold">
               {event.title}
             </p>
           </div>
+
           <p className="mt-5 text-black">{event.description}</p>
           <div className="flex justify-center mt-5">
-            <button className="bg-red-900 font-semibold h-10 flex justify-center w-full sm:px-5 px-[35px] py-[11px] rounded-[3px] text-sm text-white">
-              {VIEW_EVENT}
-            </button>
+            <a target="_blank" rel="noopener noreferrer" href={event.link}>
+              <button className="bg-red-900 font-semibold h-10 flex justify-center w-full sm:px-5 px-[35px] py-[11px] rounded-[3px] sm:text-sm text-xs text-white">
+                {VIEW_EVENT}
+              </button>
+            </a>
           </div>
         </div>
       </div>
