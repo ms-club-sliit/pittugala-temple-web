@@ -1,13 +1,17 @@
 import EventContainer from '@/components/dhammaSchoolEvents/eventContainer'
 import events from './data/events.json'
+import { DHAMMA_SCHOOL_HEADER } from '@/consts/consts'
 
 const DhammaSchoolPage = () => {
+
+  const filteredEvents = events.filter(event => event.category === "Dhamma School");
+
   return (
     <div className="bg-white py-8">
       <div className="text-black container mx-auto px-20">
         <div className="block mx-auto my-12 font-semibold w-full lg:w-2/4">
           <p className="text-center text-4xl lg:text-5xl mb-4 leading-normal">
-            Sri Sudharmaramaya Dhamma School
+            {DHAMMA_SCHOOL_HEADER}
           </p>
         </div>
         <div className="block my-12">
@@ -28,12 +32,12 @@ const DhammaSchoolPage = () => {
         </div>
         <div className="block my-12">
           <div className="mt-6 grid grid-cols-1 gap-x-6 gap-y-10 sm:grid-cols-2 lg:grid-cols-4 xl:gap-x-8">
-            {events.length ? (
-              events.map((event) => (
+            {filteredEvents.length ? (
+              filteredEvents.map((event) => (
                 <EventContainer key={event.id} event={event} />
               ))
             ) : (
-              <p className="flex justify-center">No events to display.</p>
+              <p className="flex justify-center">No events to display for the selected category.</p>
             )}
           </div>
         </div>

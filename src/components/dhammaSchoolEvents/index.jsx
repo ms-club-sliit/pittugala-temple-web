@@ -26,6 +26,9 @@ const DhammaSchoolEventsPage = () => {
       case 'Poya Day':
         return setSelectedEvents(eventFilter('Poya Day'))
 
+      case 'Information':
+        return setSelectedEvents(eventFilter('Information'))
+
       case 'Katina Pooja':
         return setSelectedEvents(eventFilter('Katina Pooja'))
 

@@ -22,3 +22,5 @@ export const VIEW_EVENT = "වැඩසටහන බලන්න"
 export const CONNECT_WITH_US = "අප සම්බන්ධ වන්න"
 
 export const ADDRESS = "ශ්‍රී සුදර්ශනාරාම විහාරස්ථානය, මාලඹේ, කොළඹ."
+
+export const DHAMMA_SCHOOL_HEADER = "ශ්‍රී තරුණෝදය දහම්පාසල"

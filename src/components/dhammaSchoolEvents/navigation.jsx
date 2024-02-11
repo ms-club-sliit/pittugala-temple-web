@@ -34,6 +34,7 @@ const linkStyles = (isActive) => ({
 const links = [
   { label: 'All', key: 'All' },
   { label: 'Poya Day', key: 'Poya Day' },
+  { label: 'Information', key: 'Information' },
   { label: 'Katina Pooja', key: 'Katina Pooja' },
   { label: 'Bodhi Pooja', key: 'Bodhi Pooja' },
   { label: 'Charity', key: 'Charity' },

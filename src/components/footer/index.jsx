@@ -102,7 +102,7 @@ const Footer = () => {
                 src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d495.1059336962744!2d79.96935574475854!3d6.908835252637313!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ae256d72b7ea4e1%3A0xa0057ffacc69689c!2sSri%20Sudharshanarama%20Temple%20-%20Pittugala%2CMalabe!5e0!3m2!1sen!2sde!4v1707636552160!5m2!1sen!2sde"
                 width="400"
                 height="300"
-                allowfullscreen=""
+                allowFullScreen=""
                 loading="lazy"
               />
             </div>
