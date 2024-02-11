@@ -1,6 +1,7 @@
 'use client'
 
 import React, { useState } from 'react'
+import Image from 'next/image'
 import Fab from '@mui/material/Fab';
 import Backdrop from '@mui/material/Backdrop';
 import Box from '@mui/material/Box';
@@ -81,17 +82,28 @@ export default function DonationButton() {
                     }}
                 >
                     <Fade in={open}>
-                        <Box sx={modalStyle}>
+                        <Box sx={{ ...modalStyle, display: 'flex', flexDirection: 'column', alignItems: 'center' }}>
                             <Typography id="transition-modal-title" variant="h5" component="h2" style={headerStyle}>
                                 {DONATION_HEADER}
                             </Typography>
+                            <br />
+                            <div style={{ display: 'flex', alignItems: 'center', flexDirection: 'column' }}>
+                                <Image
+                                    src="/static/boc.png"
+                                    alt="pittugala-temple-web-logo"
+                                    width={150}
+                                    height={100}
+                                    loading='lazy'
+                                />
+                            </div>
                             <Typography id="transition-modal-description" sx={{ mt: 2 }} style={bodyStyle}>
-                                විහාරාධිපති <br />
-                                ශ්‍රී සුදර්ශනාරාම පුරාණ විහාරය - මාලබේ<br />
-                                ලංකා බැංකුව මාලබේ ශාඛව - 8576912<br />
+                                විහාරාධිපති<br />
+                                ශ්‍රී සුදර්ශනාරාම පුරාණ විහාරය - මාලබේ<br />
+                                ලංකා බැංකුව මාලබේ ශාඛව - 8576912<br />
                                 0715608209
                             </Typography>
                         </Box>
+
                     </Fade>
                 </Modal>
             </div>
