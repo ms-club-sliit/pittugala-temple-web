@@ -19,7 +19,7 @@ export const FIND_OUT_MORE = "තවත් දැනගන්න"
 export const MORE_DETAILS = "වැඩි විස්තර"
 export const VIEW_EVENT = "වැඩසටහන බලන්න"
 
-export const CONNECT_WITH_US = "අප සම්බන්ධ වන්න"
+export const CONNECT_WITH_US = "අප හා සම්බන්ධ වන්න"
 
 export const ADDRESS = "ශ්‍රී සුදර්ශනාරාම විහාරස්ථානය, මාලඹේ, කොළඹ."
 
