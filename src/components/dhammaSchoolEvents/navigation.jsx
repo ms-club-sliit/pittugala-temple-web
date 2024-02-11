@@ -32,11 +32,11 @@ const linkStyles = (isActive) => ({
 })
 
 const links = [
-  { label: 'All', key: 'All' },
-  { label: 'Poya Day', key: 'Poya Day' },
-  { label: 'Katina Pooja', key: 'Katina Pooja' },
-  { label: 'Bodhi Pooja', key: 'Bodhi Pooja' },
-  { label: 'Charity', key: 'Charity' },
+  { label: 'සියළුම වැඩසටහන්', key: 'All' },
+  { label: 'පෝය දින', key: 'Poya Day' },
+  { label: 'තොරතුරු', key: 'Information' },
+  { label: 'බෝධි පූජා', key: 'Bodhi Pooja' },
+  { label: 'ආධාර', key: 'Charity' },
 ]
 
 const EventNavigation = ({ activeLink, setActiveLink, onSearch }) => {

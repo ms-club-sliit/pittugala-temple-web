@@ -4,6 +4,14 @@ import { useState } from 'react'
 import Image from 'next/image'
 import Link from 'next/link'
 
+import {
+  ABOUT,
+  EVENTS,
+  GALLERY,
+  PROJECTS,
+  DHAMMA_SCHOOL,
+} from '@/consts/consts'
+
 const Navbar = () => {
   const [isMobileMenuOpen, setMobileMenuOpen] = useState(false)
 
@@ -14,7 +22,7 @@ const Navbar = () => {
   return (
     <nav className="bg-white p-4 text-black font-semibold">
       <div
-        className={`container mx-auto flex justify-between items-center ${isMobileMenuOpen ? 'flex-col items-center' : 'pl-20'
+        className={`container mx-auto flex justify-between items-center ${isMobileMenuOpen ? 'flex-col items-center' : 'pl-5'
           }`}
       >
         <div
@@ -35,25 +43,25 @@ const Navbar = () => {
         <div className="hidden md:block">
           <ul className="flex space-x-6 pr-20">
             <li>
-              <Link href="/about">About</Link>
+              <Link href="/about">{ABOUT}</Link>
             </li>
             <li className="pl-5">
-              <Link href="/events">Events</Link>
+              <Link href="/events">{EVENTS}</Link>
             </li>
             <li className="pl-5">
-              <Link href="/gallery">Gallery</Link>
+              <Link href="/gallery">{GALLERY}</Link>
             </li>
             <li className="pl-5">
-              <Link href="/projects">Projects</Link>
+              <Link href="/projects">{PROJECTS}</Link>
             </li>
             <li className="pl-5">
-              <Link href="/dhammaSchool">Dhamma School</Link>
+              <Link href="/dhammaSchool">{DHAMMA_SCHOOL}</Link>
             </li>
           </ul>
         </div>
         <div className="md:hidden flex items-center">
           <button
-            className="animate-bounce text-black"
+            className="text-black"
             onClick={toggleMobileMenu}
           >
             &#9776;
@@ -66,19 +74,19 @@ const Navbar = () => {
       >
         <div className="flex flex-col items-center">
           <li>
-            <a href="/about">About</a>
+            <Link href="/about">{ABOUT}</Link>
           </li>
-          <li>
-            <a href="/events">Events</a>
+          <li className="pl-5">
+            <Link href="/events">{EVENTS}</Link>
           </li>
-          <li>
-            <a href="/gallery">Gallery</a>
+          <li className="pl-5">
+            <Link href="/gallery">{GALLERY}</Link>
           </li>
-          <li>
-            <a href="/projects">Projects</a>
+          <li className="pl-5">
+            <Link href="/projects">{PROJECTS}</Link>
           </li>
-          <li>
-            <a href="/dhammaSchool">Dhamma School</a>
+          <li className="pl-5">
+            <Link href="/dhammaSchool">{DHAMMA_SCHOOL}</Link>
           </li>
         </div>
       </ul>

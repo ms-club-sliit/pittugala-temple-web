@@ -1,13 +1,18 @@
 import {
   faFacebook,
-  faInstagram,
-  faLinkedin,
-  faTwitter,
-  faYoutube,
 } from '@fortawesome/free-brands-svg-icons'
-import { faPenNib } from '@fortawesome/free-solid-svg-icons'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import Link from 'next/link'
+
+import {
+  ABOUT,
+  ADDRESS,
+  CONNECT_WITH_US,
+  DHAMMA_SCHOOL,
+  EVENTS,
+  PROJECTS,
+  REFERENCES
+} from '@/consts/consts'
 
 const Footer = () => {
   return (
@@ -44,65 +49,37 @@ const Footer = () => {
                   >
                     <FontAwesomeIcon icon={faFacebook} className="h-6 w-6" />
                   </Link>
-                  <Link
-                    href="#"
-                    className="transition-all hover:scale-125"
-                    target="_blank"
-                  >
-                    <FontAwesomeIcon icon={faInstagram} className="h-6 w-6" />
-                  </Link>
-                  <Link
-                    href="#"
-                    className="transition-all hover:scale-125"
-                    target="_blank"
-                  >
-                    <FontAwesomeIcon icon={faTwitter} className="h-6 w-6" />
-                  </Link>
-                  <Link
-                    href="#"
-                    className="transition-all hover:scale-125"
-                    target="_blank"
-                  >
-                    <FontAwesomeIcon icon={faLinkedin} className="h-6 w-6" />
-                  </Link>
-                  <Link
-                    href="#"
-                    className="transition-all hover:scale-125"
-                    target="_blank"
-                  >
-                    <FontAwesomeIcon icon={faYoutube} className="h-6 w-6" />
-                  </Link>
                 </div>
               </div>
             </div>
             <div className="lg:col-span-2 col-span-6">
-              <h2 className="mb-6 text-xl font-semibold uppercase">Links</h2>
+              <h2 className="mb-6 text-xl font-semibold uppercase">{REFERENCES}</h2>
               <ul className="font-medium">
                 <li className="mb-4">
                   <Link href="/about" className="hover:underline">
-                    About
+                    {ABOUT}
                   </Link>
                 </li>
                 <li className="mb-4">
                   <Link href="/projects" className="hover:underline">
-                    Projects
+                    {PROJECTS}
                   </Link>
                 </li>
                 <li className="mb-4">
                   <Link href="/events" className="hover:underline">
-                    Events
+                    {EVENTS}
                   </Link>
                 </li>
                 <li className="mb-4">
                   <Link href="/dhammaSchool" className="hover:underline">
-                    Dhamma School
+                    {DHAMMA_SCHOOL}
                   </Link>
                 </li>
               </ul>
             </div>
             <div className="lg:col-span-3 col-span-6">
               <h2 className="mb-6 text-xl font-semibold uppercase">
-                Connect with us
+                {CONNECT_WITH_US}
               </h2>
               <ul className="text-black font-medium">
                 <li className="mb-4">
@@ -111,23 +88,24 @@ const Footer = () => {
                   </a>
                 </li>
                 <li className="mb-4">
-                  <a href="mailto:srisudharmaramaya@gmail.com">
+                  <a href="mailto:srisudharmaramaya@gmail.com" className="email-link">
                     <span>srisudharmaramaya@gmail.com</span>
                   </a>
+
                 </li>
                 <li className="mb-4">
-                  <span>Sri Sudarmaramaya Temple, Malabe, Colombo.</span>
+                  <span>{ADDRESS}</span>
                 </li>
               </ul>
             </div>
             <div className="lg:col-span-3 col-span-12">
               <iframe
-                className="w-full h-64"
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3960.797616351774!2d79.9724682!3d6.914784299999999!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ae256db0806db0b%3A0x1f268e1d8b84cf05!2sPittugala%20Temple%2C%20162%2F24%2F1%20B263%2C%20Malabe%2C%20Sri%20Lanka!5e0!3m2!1sen!2sde!4v1696947856756!5m2!1sen!2sde"
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d495.1059336962744!2d79.96935574475854!3d6.908835252637313!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ae256d72b7ea4e1%3A0xa0057ffacc69689c!2sSri%20Sudharshanarama%20Temple%20-%20Pittugala%2CMalabe!5e0!3m2!1sen!2sde!4v1707636552160!5m2!1sen!2sde"
+                width="350"
+                height="300"
                 allowFullScreen=""
                 loading="lazy"
-                referrerPolicy="no-referrer-when-downgrade"
-              ></iframe>
+              />
             </div>
           </div>
         </div>
