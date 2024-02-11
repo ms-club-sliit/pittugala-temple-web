@@ -3,8 +3,9 @@ import events from './data/events.json'
 import { DHAMMA_SCHOOL_HEADER } from '@/consts/consts'
 
 const DhammaSchoolPage = () => {
-
-  const filteredEvents = events.filter(event => event.category === "Dhamma School");
+  const filteredEvents = events.filter(
+    (event) => event.category === 'Dhamma School'
+  )
 
   return (
     <div className="bg-white py-8">
@@ -15,7 +16,11 @@ const DhammaSchoolPage = () => {
           </p>
         </div>
         <div className="block my-12">
-          <div className="h-72 w-full bg-gray-300"></div>
+          <img
+            src="/static/dammaSchool.jpeg"
+            className="w-full"
+            alt="dhamma school image"
+          />
         </div>
         <div className="block my-12">
           <p className="text-base">
@@ -37,7 +42,9 @@ const DhammaSchoolPage = () => {
                 <EventContainer key={event.id} event={event} />
               ))
             ) : (
-              <p className="flex justify-center">No events to display for the selected category.</p>
+              <p className="flex justify-center">
+                No events to display for the selected category.
+              </p>
             )}
           </div>
         </div>
