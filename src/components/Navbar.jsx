@@ -33,8 +33,8 @@ const Navbar = () => {
             <Image
               src="/static/logolq.png"
               alt="pittugala-temple-web-logo"
-              width={250}
-              height={300}
+              width={300}
+              height={100}
               className={`md:mx-auto ${isMobileMenuOpen ? 'mx-auto text-center' : ''
                 }`}
             />
