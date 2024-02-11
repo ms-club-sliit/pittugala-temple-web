@@ -31,7 +31,7 @@ const Navbar = () => {
         >
           <Link href="/">
             <Image
-              src="/static/pittugala-temple-web-logo.png"
+              src="/static/logolq.png"
               alt="pittugala-temple-web-logo"
               width={250}
               height={300}
