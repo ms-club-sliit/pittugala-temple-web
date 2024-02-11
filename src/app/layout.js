@@ -7,8 +7,8 @@ import DonationButton from '@/components/DonationButton'
 const inter = Inter({ subsets: ['latin'] })
 
 export const metadata = {
-  title: 'Pittugala Temple Web',
-  description: 'Official Webstite of Pittugala Temple, Malabe, Sri Lanka',
+  title: 'ශ්‍රී සුදර්ශනාරාම විහාරස්ථානය',
+  description: ' ශ්‍රී සුදර්ශන්රාම පුරාණ විහාරස්ථානයේ නිල වෙබ් අඩවිය',
 }
 
 export default function RootLayout({ children }) {

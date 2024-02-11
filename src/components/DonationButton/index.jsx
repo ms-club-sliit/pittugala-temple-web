@@ -6,12 +6,10 @@ import Backdrop from '@mui/material/Backdrop';
 import Box from '@mui/material/Box';
 import Modal from '@mui/material/Modal';
 import Fade from '@mui/material/Fade';
-import Button from '@mui/material/Button';
 import Typography from '@mui/material/Typography';
-import AddIcon from '@mui/icons-material/Add';
-import EditIcon from '@mui/icons-material/Edit';
-import UpIcon from '@mui/icons-material/KeyboardArrowUp';
 import VolunteerActivismIcon from '@mui/icons-material/VolunteerActivism';
+
+import { DONATION_HEADER } from '@/consts/consts'
 
 export default function DonationButton() {
 
@@ -85,7 +83,7 @@ export default function DonationButton() {
                     <Fade in={open}>
                         <Box sx={modalStyle}>
                             <Typography id="transition-modal-title" variant="h5" component="h2" style={headerStyle}>
-                                මුදල් පරිත්‍යාග
+                                {DONATION_HEADER}
                             </Typography>
                             <Typography id="transition-modal-description" sx={{ mt: 2 }} style={bodyStyle}>
                                 විහාරාධිපති <br />

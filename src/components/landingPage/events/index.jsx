@@ -1,3 +1,4 @@
+import { EVENTS, FIND_OUT_MORE } from '@/consts/consts'
 import Link from 'next/link'
 
 export default function index() {
@@ -24,7 +25,7 @@ export default function index() {
 
   return (
     <div className="p-8  place-items-center justify-center w-full bg-white ">
-      <h1 className="text-4xl text-center font-bold mb-8 text-black">Events</h1>
+      <h1 className="text-4xl text-center font-bold mb-8 text-black">{EVENTS}</h1>
       <div className="  flex  flex-col sm:flex-row justify-center drop-shadow">
         {events.map((event) => (
           <div
@@ -50,7 +51,7 @@ export default function index() {
           href="/events"
           className="bg-orange hover:bg-light-orange text-white font-bold py-2 px-4 rounded"
         >
-          Find out more {'>'}
+          {FIND_OUT_MORE} {'>'}
         </Link>
       </div>
     </div>

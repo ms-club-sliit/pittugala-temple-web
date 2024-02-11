@@ -3,10 +3,7 @@ import React from 'react'
 import Link from 'next/link'
 import Image from 'next/image'
 
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faAngleRight } from '@fortawesome/free-solid-svg-icons'
-
-import { ABOUT_TEXT, ABOUT_POTRAIT_TEXT } from '../../consts/consts'
+import { ABOUT_TEXT, ABOUT_POTRAIT_TEXT, ABOUT, FIND_OUT_MORE } from '../../consts/consts'
 
 const About = () => {
   return (
@@ -14,7 +11,7 @@ const About = () => {
       <div className="mx-auto w-full p-4 py-6 lg:py-8 bg-white">
         <div className="flex justify-center items-center h-40 about-top-ribbon">
           <h2 className="mb-4 text-black font-extrabold leading-none tracking-tight text-4xl md:text-4xl lg:text-4xl">
-            About
+            {ABOUT}
           </h2>
         </div>
 
@@ -41,7 +38,7 @@ const About = () => {
             href="/about"
             className="bg-orange hover:bg-light-orange text-white font-bold py-2 px-4 rounded"
           >
-            Find out more {'>'}
+            {FIND_OUT_MORE} {'>'}
           </Link>
         </div>
       </div>

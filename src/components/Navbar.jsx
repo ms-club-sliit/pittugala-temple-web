@@ -4,6 +4,14 @@ import { useState } from 'react'
 import Image from 'next/image'
 import Link from 'next/link'
 
+import {
+  ABOUT,
+  EVENTS,
+  GALLERY,
+  PROJECTS,
+  DHAMMA_SCHOOL,
+} from '@/consts/consts'
+
 const Navbar = () => {
   const [isMobileMenuOpen, setMobileMenuOpen] = useState(false)
 
@@ -35,19 +43,19 @@ const Navbar = () => {
         <div className="hidden md:block">
           <ul className="flex space-x-6 pr-20">
             <li>
-              <Link href="/about">About</Link>
+              <Link href="/about">{ABOUT}</Link>
             </li>
             <li className="pl-5">
-              <Link href="/events">Events</Link>
+              <Link href="/events">{EVENTS}</Link>
             </li>
             <li className="pl-5">
-              <Link href="/gallery">Gallery</Link>
+              <Link href="/gallery">{GALLERY}</Link>
             </li>
             <li className="pl-5">
-              <Link href="/projects">Projects</Link>
+              <Link href="/projects">{PROJECTS}</Link>
             </li>
             <li className="pl-5">
-              <Link href="/dhammaSchool">Dhamma School</Link>
+              <Link href="/dhammaSchool">{DHAMMA_SCHOOL}</Link>
             </li>
           </ul>
         </div>
