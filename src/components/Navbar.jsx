@@ -31,10 +31,11 @@ const Navbar = () => {
         >
           <Link href="/">
             <Image
-              src="/static/pittugala-temple-web-logo.png"
+              src="/static/logolq.png"
               alt="pittugala-temple-web-logo"
-              width={250}
-              height={300}
+              width={300}
+              height={10}
+              loading='lazy'
               className={`md:mx-auto ${isMobileMenuOpen ? 'mx-auto text-center' : ''
                 }`}
             />
