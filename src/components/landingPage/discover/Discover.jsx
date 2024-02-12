@@ -17,6 +17,7 @@ export default function Discover() {
           className="w-9/12 "
           src="./static/templeImage.jpg"
           alt="discover image"
+          loading='lazy'
         />
         <div className="absolute inset-0 bg-gradient-to-r from-white from-25% to-transparent"></div>
 

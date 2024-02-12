@@ -62,7 +62,7 @@ const Navbar = () => {
         </div>
         <div className="md:hidden flex items-center">
           <button
-            className="text-black"
+            className="text-black animate-bounce"
             onClick={toggleMobileMenu}
           >
             &#9776;
