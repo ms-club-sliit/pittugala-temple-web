@@ -10,7 +10,7 @@ export default function Discover() {
   }
 
   return (
-    <div className="bg-white text-black">
+    <div className="bg-white text-black sm:min-h-[40vh] md:min-h-[45vh] xl:min-h-[95vh]">
       <marquee
         hspace="0"
         className="invisible xl:visible bg-[#E35F00] h-7 text-white align-middle"
@@ -22,7 +22,7 @@ export default function Discover() {
           className="w-9/12"
           src="./static/templeImage.jpg"
           alt="discover image"
-          // loading='lazy'
+          loading='lazy'
           onLoadingComplete={load}
         />
         <div className="absolute inset-0 bg-gradient-to-r from-white from-25% to-transparent"></div>
@@ -31,7 +31,7 @@ export default function Discover() {
           <h1 className="text-sm xl:text-3xl my-2 xl:my-10 font-bold text-black text-black">
             ශ්‍රී සුදර්ශනාරාම <br />පුරාණ විහාරය
           </h1>
-          <p className=" hidden sm:flex  text-xs xl:text-lg w-1/2">
+          <p className=" hidden sm:flex text-xs xl:text-lg w-1/2">
             මාලබේ පිට්ටුගල ශ්‍රී සුදර්ශනාරාම පුරාණ විහාරස්ථානය වසර 300කට අධික
             ඉතිහාසයකට උරුමකම් කියන ශ්‍රී ලංකාවේ සංස්කෘතික හා ආගමික උරුමයේ
             ගෞරවනීය සාක්ෂියක් ලෙස පවතී. මාලඹේ නගරයේ පිහිටා ඇති මෙම පුරාණ විහාරය
