@@ -8,8 +8,8 @@ import { ABOUT_TEXT, ABOUT_POTRAIT_TEXT, ABOUT, FIND_OUT_MORE } from '../../cons
 const About = () => {
   return (
     <>
-      <div className="mx-auto w-full p-4 py-6 lg:py-8 bg-white">
-        <div className="flex justify-center items-center h-40 about-top-ribbon">
+      <div className="mx-auto w-full p-4 py-1 lg:py-1 bg-white">
+        <div className="flex justify-center items-center h-40">
           <h2 className="mb-4 text-black font-extrabold leading-none tracking-tight text-4xl md:text-4xl lg:text-4xl">
             {ABOUT}
           </h2>
@@ -33,7 +33,7 @@ const About = () => {
             </p>
           </div>
         </div>
-        <div className="flex justify-center items-center mt-2 h-40 about-bottom-ribbon">
+        <div className="flex justify-center items-center mt-2 h-">
           <Link
             href="/about"
             className="bg-orange hover:bg-light-orange text-white font-bold py-2 px-4 rounded"

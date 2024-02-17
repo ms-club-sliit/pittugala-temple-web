@@ -1,6 +1,5 @@
 'use client'
 import React from 'react'
-import '../../../src/CSS/gallery.css'
 import galleryData from '@/data/gallery.json'
 import Image from 'next/image'
 
@@ -13,11 +12,10 @@ const Gallery = () => {
         {filteredGalleryData.map((item, index) => (
           <div
             key={item.id}
-            className={`${
-              index === 1 || index === 5 || index === 11
+            className={`${index === 1 || index === 5 || index === 11
                 ? 'col-span-2'
                 : 'col-span-1'
-            }`}
+              }`}
           >
             <Image
               width={item.width}
