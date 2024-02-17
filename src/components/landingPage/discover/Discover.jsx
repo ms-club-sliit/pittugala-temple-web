@@ -10,7 +10,7 @@ export default function Discover() {
   }
 
   return (
-    <div className="bg-white text-black sm:min-h-[40vh] md:min-h-[45vh] xl:min-h-[95vh]">
+    <div className="bg-white text-black min-h-[25vh] sm:min-h-[40vh] md:min-h-[45vh] xl:min-h-[95vh]">
       <marquee
         hspace="0"
         className="invisible xl:visible bg-[#E35F00] h-7 text-white align-middle"
