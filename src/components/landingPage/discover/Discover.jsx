@@ -4,6 +4,11 @@ import { DHAMMA_SCHOOL, GALLERY } from '@/consts/consts'
 
 export default function Discover() {
   const router = useRouter()
+
+  const load = () => {
+    alert('Image loaded')
+  }
+
   return (
     <div className="bg-white text-black">
       <marquee
@@ -12,12 +17,13 @@ export default function Discover() {
       >
         සාදරයෙන් පිළිගනිමු! මෙය ශ්‍රී සුදර්ශනාරාම පුරාණ විහාරස්ථානයේ නිල වෙබ් අඩවියයි
       </marquee>
-      <div className="relative bg-white w-full flex justify-end">
+      <div className="relative bg-white w-full flex justify-end w-9/12">
         <img
-          className="w-9/12 "
+          className="w-9/12"
           src="./static/templeImage.jpg"
           alt="discover image"
-          loading='lazy'
+          // loading='lazy'
+          onLoadingComplete={load}
         />
         <div className="absolute inset-0 bg-gradient-to-r from-white from-25% to-transparent"></div>
 
