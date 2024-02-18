@@ -101,7 +101,7 @@ const Footer = () => {
             <div className="lg:col-span-3 col-span-12">
               <iframe
                 src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d495.1059336962744!2d79.96935574475854!3d6.908835252637313!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ae256d72b7ea4e1%3A0xa0057ffacc69689c!2sSri%20Sudharshanarama%20Temple%20-%20Pittugala%2CMalabe!5e0!3m2!1sen!2sde!4v1707636552160!5m2!1sen!2sde"
-                width="350"
+                width="330"
                 height="300"
                 allowFullScreen=""
                 loading="lazy"
@@ -110,7 +110,7 @@ const Footer = () => {
           </div>
         </div>
         <hr className="my-6 border-gray-200 sm:mx-auto lg:my-8" />
-        <div className="flex justify-center items-center">
+        <div className="flex justify-center items-center w-11/12 sm:w-full">
           <span className="text-lg text-black text-center mr-2">
             Copyright © 2023 - All Rights Reserved | Powered By
           </span>
