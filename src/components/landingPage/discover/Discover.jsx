@@ -15,7 +15,7 @@ export default function Discover() {
         hspace="0"
         className="invisible xl:visible bg-[#E35F00] h-7 text-white align-middle"
       >
-        සාදරයෙන් පිළිගනිමු! මෙය ශ්‍රී සුදර්ශනාරාම පුරාණ විහාරස්ථානයේ නිල වෙබ් අඩවියයි
+        ශ්‍රී සුදර්ශනාරාම පුරාණ විහාරස්ථානයේ නිල වෙබ් අඩවිය වෙත සාදරයෙන් පිළිගනිමු!
       </marquee>
       <div className="relative bg-white w-full flex justify-end w-9/12">
         <img

@@ -14,6 +14,7 @@ import {
   REFERENCES
 } from '@/consts/consts'
 
+
 const Footer = () => {
   return (
     <footer className="bg-white">
