@@ -15,7 +15,7 @@ export const REFERENCES = "යොමු කිරීම්"
 export const ABOUT = "විහරස්ථානය පිලිබඳ"
 export const EVENTS = "වැඩසටහන්"
 export const GALLERY = "ඡායාරෑප ගැලරිය"
-export const PROJECTS = "ව්යාපෘතින්"
+export const PROJECTS = "ව්‍යාපෘතීන්"
 export const DHAMMA_SCHOOL = "දහම් පාසල"
 
 export const FIND_OUT_MORE = "තවත් දැනගන්න"

@@ -14,7 +14,7 @@ const Projects = () => {
           </h2>
         </div>
         <div className="flex justify-center items-center mt-2">
-          <p className="mb-6 text-l font-normal text-black w-[90%]">
+          <p className="mb-6 text-l font-normal text-black w-[90%] text-center">
             {PROJECT_TEXT}
           </p>
         </div>
