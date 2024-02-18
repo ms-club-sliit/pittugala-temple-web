@@ -34,16 +34,16 @@ const About = () => {
 
   return (
     <>
-      <div className="min-h-screen w-full bg-white px-[40px] py-[20px] overflow-hidden">
+      <div className="min-h-screen w-full bg-white px-[10px] sm:px-[40px] py-[20px] overflow-hidden ">
         <div className="max-w-screen-xl mx-auto">
           <div className="grid gap-[40px]">
             <div>
-              <div className="text-center text-black font-semibold text-lg md:text-xl">
+              <div className="text-center text-black font-semibold text-sm sm:text-lg md:text-xl">
                 {HISTORY}
               </div>
               <div className="flex justify-center">
-                <div className="bg-[#740000] w-[220px] h-[2px]"></div>
-                <div className="bg-[#E35F00] w-[240px] h-[2px]"></div>
+                <div className="bg-[#740000] w-[180px] sm:w-[220px] mt-1 h-[1.5px] sm:h-[2px]"></div>
+                <div className="bg-[#E35F00] w-[190px] sm:w-[240px] mt-1 h-[1.5px] sm:h-[2px]"></div>
               </div>
             </div>
             <div className="flex justify-center">
