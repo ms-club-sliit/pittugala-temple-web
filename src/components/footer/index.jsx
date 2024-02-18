@@ -110,8 +110,8 @@ const Footer = () => {
           </div>
         </div>
         <hr className="my-6 border-gray-200 sm:mx-auto lg:my-8" />
-        <div className="flex justify-center items-center w-11/12 sm:w-full">
-          <span className="text-lg text-black text-center mr-2">
+        <div className="flex justify-center items-center">
+          <span className="text-md sm:text-lg text-black text-center mr-2">
             Copyright © 2023 - All Rights Reserved | Powered By
           </span>
           <Link href="https://msclubsliit.org/" target="_blank">
