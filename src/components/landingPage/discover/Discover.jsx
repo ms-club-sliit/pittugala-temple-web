@@ -4,20 +4,26 @@ import { DHAMMA_SCHOOL, GALLERY } from '@/consts/consts'
 
 export default function Discover() {
   const router = useRouter()
+
+  const load = () => {
+    alert('Image loaded')
+  }
+
   return (
-    <div className="bg-white text-black">
+    <div className="bg-white text-black min-h-[25vh] sm:min-h-[40vh] md:min-h-[45vh] xl:min-h-[95vh]">
       <marquee
         hspace="0"
         className="invisible xl:visible bg-[#E35F00] h-7 text-white align-middle"
       >
-        සාදරයෙන් පිළිගනිමු! මෙය ශ්‍රී සුදර්ශන්රාම පුරාණ විහාරස්ථානයේ නිල වෙබ් අඩවියයි
+        ශ්‍රී සුදර්ශනාරාම පුරාණ විහාරස්ථානයේ නිල වෙබ් අඩවිය වෙත සාදරයෙන් පිළිගනිමු!
       </marquee>
-      <div className="relative bg-white w-full flex justify-end">
+      <div className="relative bg-white w-full flex justify-end w-9/12">
         <img
-          className="w-9/12 "
+          className="w-9/12"
           src="./static/templeImage.jpg"
           alt="discover image"
           loading='lazy'
+          onLoadingComplete={load}
         />
         <div className="absolute inset-0 bg-gradient-to-r from-white from-25% to-transparent"></div>
 
@@ -25,7 +31,7 @@ export default function Discover() {
           <h1 className="text-sm xl:text-3xl my-2 xl:my-10 font-bold text-black text-black">
             ශ්‍රී සුදර්ශනාරාම <br />පුරාණ විහාරය
           </h1>
-          <p className=" hidden sm:flex  text-xs xl:text-lg w-1/2">
+          <p className=" hidden sm:flex text-xs xl:text-lg w-1/2">
             මාලබේ පිට්ටුගල ශ්‍රී සුදර්ශනාරාම පුරාණ විහාරස්ථානය වසර 300කට අධික
             ඉතිහාසයකට උරුමකම් කියන ශ්‍රී ලංකාවේ සංස්කෘතික හා ආගමික උරුමයේ
             ගෞරවනීය සාක්ෂියක් ලෙස පවතී. මාලඹේ නගරයේ පිහිටා ඇති මෙම පුරාණ විහාරය

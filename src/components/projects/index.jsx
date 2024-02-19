@@ -8,13 +8,13 @@ const Projects = () => {
   return (
     <>
       <div className="mx-auto w-full p-4 py-6 lg:py-8 bg-white">
-        <div className="flex justify-center items-center">
+        <div className="flex justify-center items-center mt-2">
           <h2 className="mb-4 text-black font-extrabold leading-none tracking-tight text-4xl md:text-4xl lg:text-4xl">
             {PROJECTS}
           </h2>
         </div>
-        <div className="flex justify-center items-center">
-          <p className="mb-6 text-l font-normal text-black w-[90%]">
+        <div className="flex justify-center items-center mt-2">
+          <p className="mb-6 text-l font-normal text-black w-[90%] text-center">
             {PROJECT_TEXT}
           </p>
         </div>
