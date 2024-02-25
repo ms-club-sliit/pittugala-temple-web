@@ -1,5 +1,6 @@
 import { EVENTS, FIND_OUT_MORE } from '@/consts/consts'
 import Link from 'next/link'
+import Image from 'next/image'
 
 export default function index() {
   const events = [
@@ -24,17 +25,21 @@ export default function index() {
   ]
 
   return (
-    <div className="p-8  place-items-center justify-center w-full bg-white ">
-      <h1 className="text-4xl text-center font-bold mb-8 text-black">{EVENTS}</h1>
-      <div className="  flex  flex-col sm:flex-row justify-center drop-shadow">
+    <div className="flex flex-col   w-full bg-white ">
+      <h1 className="text-4xl  text-center font-bold mb-8 text-black">
+        {EVENTS}
+      </h1>
+      <div className=" w-full  flex items-center justify-center sm:items-start  flex-col sm:flex-row  drop-shadow">
         {events.map((event) => (
           <div
             key={event.id}
-            className=" mx-2 my-2 rounded-sm w-72  bg-[#FEF9F5]"
+            className=" sm:mx-2 my-2 rounded-sm  w-72  bg-[#FEF9F5]"
           >
-            <img
+            <Image
               className="w-full object-contain h-5/6"
               src={event.src}
+              width={200}
+              height={100}
               alt="event image"
             />
 
