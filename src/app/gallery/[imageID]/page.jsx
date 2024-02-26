@@ -3,7 +3,7 @@ import galleryData from '@/data/gallery.json'
 import Image from 'next/image'
 import { useRouter } from 'next/navigation'
 
-function page({ params }) {
+function GalleryView({ params }) {
   const filtData = galleryData.galleryData
   const image = filtData.find((item) => item.id === parseInt(params.imageID))
   const router = useRouter()
@@ -48,4 +48,4 @@ function page({ params }) {
   )
 }
 
-export default page
+export default GalleryView

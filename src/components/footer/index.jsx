@@ -1,8 +1,7 @@
-import {
-  faFacebook,
-} from '@fortawesome/free-brands-svg-icons'
+import { faFacebook } from '@fortawesome/free-brands-svg-icons'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import Link from 'next/link'
+import Image from 'next/image'
 
 import {
   ABOUT,
@@ -11,9 +10,8 @@ import {
   DHAMMA_SCHOOL,
   EVENTS,
   PROJECTS,
-  REFERENCES
+  REFERENCES,
 } from '@/consts/consts'
-
 
 const Footer = () => {
   return (
@@ -24,7 +22,9 @@ const Footer = () => {
             <div className="lg:col-span-4 col-span-12">
               <div className="mb-6 md:mb-0 justify-center items-center">
                 <a href="/" className="flex items-center">
-                  <img
+                  <Image
+                    height={50}
+                    width={50}
                     src="/static/pittugala-temple-web-logo.png"
                     className="h-12 sm:h-16 md:h-20 mx-auto object-contain"
                     alt="pittugala-temple-web-logo"
@@ -54,7 +54,9 @@ const Footer = () => {
               </div>
             </div>
             <div className="lg:col-span-2 col-span-6">
-              <h2 className="mb-6 text-xl font-semibold uppercase">{REFERENCES}</h2>
+              <h2 className="mb-6 text-xl font-semibold uppercase">
+                {REFERENCES}
+              </h2>
               <ul className="font-medium">
                 <li className="mb-4">
                   <Link href="/about" className="hover:underline">
@@ -89,10 +91,12 @@ const Footer = () => {
                   </a>
                 </li>
                 <li className="mb-4">
-                  <a href="mailto:srisudharmaramaya@gmail.com" className="email-link">
+                  <a
+                    href="mailto:srisudharmaramaya@gmail.com"
+                    className="email-link"
+                  >
                     <span>srisudharmaramaya@gmail.com</span>
                   </a>
-
                 </li>
                 <li className="mb-4">
                   <span>{ADDRESS}</span>
