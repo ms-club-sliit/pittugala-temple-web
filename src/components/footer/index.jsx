@@ -23,10 +23,10 @@ const Footer = () => {
               <div className="mb-6 md:mb-0 justify-center items-center">
                 <a href="/" className="flex items-center">
                   <Image
-                    height={50}
-                    width={50}
+                    height={500}
+                    width={500}
                     src="/static/pittugala-temple-web-logo.png"
-                    className="h-12 sm:h-16 md:h-20 mx-auto object-contain"
+                    className="h-12 w-10/12 sm:h-16 md:h-20 object-contain"
                     alt="pittugala-temple-web-logo"
                   />
                 </a>
