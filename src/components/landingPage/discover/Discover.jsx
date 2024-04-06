@@ -33,7 +33,7 @@ export default function Discover() {
             ශ්‍රී සුදර්ශනාරාම <br />
             පුරාණ විහාරය
           </h1>
-          <p className=" hidden sm:flex text-xs xl:text-lg w-1/2">
+          <p className=" hidden text-justify sm:flex text-xs xl:text-lg w-1/2">
             මාලඹේ පිට්ටුගල ශ්‍රී සුදර්ශනාරාම පුරාණ විහාරස්ථානය ශ්‍රී ලාංකීය
             සංස්කෘතිය සහ ආගමික උරුමයේ අපූර්වත්වය විහදා පාමින් විරාජමාන වසර 300කට
             අධික ඉතිහාසයකට උරුමකම් කියන සිද්ධස්ථානයකි. මාලඹේ නගරයේ පිහිටා ඇති

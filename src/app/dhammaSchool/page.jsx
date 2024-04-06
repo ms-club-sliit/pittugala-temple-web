@@ -11,7 +11,7 @@ const DhammaSchoolPage = () => {
     <>
       <div className="text-black container mx-auto px-4 sm:px-10 lg:px-20">
         <div className="block mx-auto my-12 font-semibold w-full lg:w-2/4">
-          <p className="text-center text-4xl lg:text-5xl mb-4 leading-normal">
+          <p className="text-center text-xl sm:text-2xl md:text-3xl lg:text-3xl xl:text-4xl mb-4 leading-normal">
             {DHAMMA_SCHOOL_HEADER}
           </p>
         </div>
@@ -23,7 +23,7 @@ const DhammaSchoolPage = () => {
           />
         </div>
         <div className="block my-12 text-center font-bold">
-          <p className="text-base">
+          <p className="text-base text-justify">
             මාලඹේ ශ්‍රී තරුණෝදය දහම් පාසල වසර 100කටත් වඩා පැරණි ඉතිහාසයක් ඇති
             දිවයිනේ ප්‍රමුඛ දහම් පාසල් අතරින් එකකි. මෙම දහම් පාසල ප්‍රදේශයේ
             බහුතරයක් දරු දැරියන්ගේ දහම් දැනුම පෝෂණය කරණ තෝතැන්නක් වන අතර ඒ සඳහා
@@ -36,7 +36,7 @@ const DhammaSchoolPage = () => {
             මෙම දහම් පාසල විසින් නොපිරිහෙළා ඉටුකරන මෙහෙවරකි.
           </p>
           <br />
-          <p className="text-base">
+          <p className="text-base text-justify">
             වසර අවසාන කාලීන පරීක්ෂණ මඟින් 1 ශ්‍රේණියේ සිට 11 ශ්‍රේණිය දක්වා
             සිසුන්ට ඔවුන්ගේ දැනුම සහ කුසලතා පෙන්නුම් කිරීමට අවකාශය සලසයි. මෙම
             ඇගයීම් ශාස්ත්‍රීය ප්‍රගතිය පමණක් නොව තම පෞද්ගලික ජීවිතයේ අරමුණු කරා

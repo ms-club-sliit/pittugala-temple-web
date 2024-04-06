@@ -31,18 +31,18 @@ const Footer = () => {
                   />
                 </a>
                 <p className="my-8 text-lg">
-                  මාලබේ පිට්ටුගල ශ්‍රී සුදර්ශනාරාමය අවුරුදු 300 කට වඩා පැරණි
+                  මාලඹේ පිට්ටුගල ශ්‍රී සුදර්ශනාරාමය අවුරුදු 300 කට වඩා පැරණි
                   පුරාණ මහා විහාරයකි.
                 </p>
 
                 <div className="flex mt-4 space-x-5 sm:justify-start sm:mt-0">
-                  <Link
+                  {/* <Link
                     href="https://web.facebook.com/SriTharunodayaDahamPasala"
                     className="transition-all hover:scale-125"
                     target="_blank"
-                  >
+                  > 
                     <FontAwesomeIcon icon={faFacebook} className="h-6 w-6" />
-                  </Link>
+                  </Link> */}
                   <Link
                     href="https://web.facebook.com/srisudarshanaramatemple/"
                     className="transition-all hover:scale-125"
