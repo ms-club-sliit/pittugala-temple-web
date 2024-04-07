@@ -21,12 +21,14 @@ const Navbar = () => {
   return (
     <nav className="bg-white p-4 text-black font-semibold">
       <div
-        className={`container mx-auto flex justify-between items-center ${isMobileMenuOpen ? 'flex-col items-center' : 'pl-5'
-          }`}
+        className={`container mx-auto flex justify-between items-center ${
+          isMobileMenuOpen ? 'flex-col items-center' : 'pl-5'
+        }`}
       >
         <div
-          className={`text-center ${isMobileMenuOpen ? 'w-full' : 'w-auto'} ${isMobileMenuOpen ? 'mx-auto' : ''
-            }`}
+          className={`text-center ${isMobileMenuOpen ? 'w-full' : 'w-auto'} ${
+            isMobileMenuOpen ? 'mx-auto' : ''
+          }`}
         >
           <Link href="/">
             <Image
@@ -34,9 +36,10 @@ const Navbar = () => {
               alt="pittugala-temple-web-logo"
               width={300}
               height={10}
-              loading='lazy'
-              className={`md:mx-auto ${isMobileMenuOpen ? 'mx-auto text-center' : ''
-                }`}
+              loading="lazy"
+              className={`md:mx-auto ${
+                isMobileMenuOpen ? 'mx-auto text-center' : ''
+              }`}
             />
           </Link>
         </div>
@@ -69,24 +72,35 @@ const Navbar = () => {
         </div>
       </div>
       <ul
-        className={`md:hidden ${isMobileMenuOpen ? 'block' : 'hidden'
-          } border-t border-black`}
+        className={`md:hidden ${
+          isMobileMenuOpen ? 'block' : 'hidden'
+        } border-t border-black`}
       >
         <div className="flex flex-col items-center">
           <li>
-            <Link href="/about">{ABOUT}</Link>
+            <Link onClick={() => toggleMobileMenu()} href="/about">
+              {ABOUT}
+            </Link>
           </li>
           <li className="pl-5">
-            <Link href="/events">{EVENTS}</Link>
+            <Link onClick={() => toggleMobileMenu()} href="/events">
+              {EVENTS}
+            </Link>
           </li>
           <li className="pl-5">
-            <Link href="/gallery">{GALLERY}</Link>
+            <Link onClick={() => toggleMobileMenu()} href="/gallery">
+              {GALLERY}
+            </Link>
           </li>
           <li className="pl-5">
-            <Link href="/projects">{PROJECTS}</Link>
+            <Link onClick={() => toggleMobileMenu()} href="/projects">
+              {PROJECTS}
+            </Link>
           </li>
           <li className="pl-5">
-            <Link href="/dhammaSchool">{DHAMMA_SCHOOL}</Link>
+            <Link onClick={() => toggleMobileMenu()} href="/dhammaSchool">
+              {DHAMMA_SCHOOL}
+            </Link>
           </li>
         </div>
       </ul>
