@@ -16,7 +16,7 @@ import {
 const Footer = () => {
   return (
     <footer className="bg-white">
-      <div className="mx-auto w-full max-w-screen-xl p-4 py-6 lg:py-8">
+      <div className="mx-auto w-full max-w-screen-xl p-4 py-6 lg:py-8 ">
         <div className="text-black">
           <div className="grid gap-6 lg:gap-8 grid-cols-12">
             <div className="lg:col-span-4 col-span-12">
@@ -115,7 +115,7 @@ const Footer = () => {
           </div>
         </div>
         <hr className="my-6 border-gray-200 sm:mx-auto lg:my-8" />
-        <div className="flex justify-center items-center">
+        <div className="flex justify-center items-center shadow-sm py-2">
           <span className="text-md sm:text-lg text-black text-center mr-2">
             Copyright © 2023 - All Rights Reserved | Powered By
           </span>

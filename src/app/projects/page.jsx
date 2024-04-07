@@ -57,14 +57,14 @@ const DhammaSchoolPage = () => {
             <div>
               <br />
               <br />
-              <p className=" text-xl text-orange">{DONATION_HEADER}</p>
+              <p className="text-xl text-orange text-center">{DONATION_HEADER}</p>
               <div
                 style={{
                   display: 'flex',
                   alignItems: 'left',
                   flexDirection: 'column',
                 }}
-                className="my-4"
+                className="my-4 items-center"
               >
                 <Image
                   src="/static/boc.png"
