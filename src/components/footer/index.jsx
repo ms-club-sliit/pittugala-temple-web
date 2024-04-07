@@ -105,7 +105,7 @@ const Footer = () => {
             </div>
             <div className="lg:col-span-3 col-span-12">
               <iframe
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d495.1059336962744!2d79.96935574475854!3d6.908835252637313!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ae256d72b7ea4e1%3A0xa0057ffacc69689c!2sSri%20Sudharshanarama%20Temple%20-%20Pittugala%2CMalabe!5e0!3m2!1sen!2sde!4v1707636552160!5m2!1sen!2sde"
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d416.332474043294!2d79.96936089338976!3d6.909210921944506!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ae257d0f8bd469b%3A0xced8b91b61506083!2sSri%20Sudarssanarama%20purana%20Viharaya!5e0!3m2!1sen!2slk!4v1712452296679!5m2!1sen!2slk"
                 width="330"
                 height="300"
                 allowFullScreen=""
