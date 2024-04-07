@@ -3,12 +3,17 @@ import React from 'react'
 import Link from 'next/link'
 import Image from 'next/image'
 
-import { ABOUT_TEXT, ABOUT_POTRAIT_TEXT, ABOUT, FIND_OUT_MORE } from '../../consts/consts'
+import {
+  ABOUT_TEXT,
+  ABOUT_POTRAIT_TEXT,
+  ABOUT,
+  FIND_OUT_MORE,
+} from '../../consts/consts'
 
 const About = () => {
   return (
     <>
-      <div className="mx-auto w-full p-4 py-1 lg:py-1 bg-white">
+      <div className="mx-auto w-full p-4 py-1 lg:py-10 bg-bg-orange">
         <div className="flex justify-center items-center h-40">
           <h2 className="mb-4 text-black font-extrabold leading-none tracking-tight text-4xl md:text-4xl lg:text-4xl">
             {ABOUT}
@@ -16,7 +21,7 @@ const About = () => {
         </div>
 
         <div className="flex justify-center items-center">
-          <p className="mb-6  font-normal text-black w-[90%] text-center">
+          <p className="mb-6  font-normal  text-black w-[90%] text-center">
             {ABOUT_TEXT}
           </p>
         </div>
