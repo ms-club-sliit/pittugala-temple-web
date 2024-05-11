@@ -1,8 +1,13 @@
+'use client'
+import { useContext } from 'react';
 import EventContainer from '@/components/dhammaSchoolEvents/eventContainer'
 import events from './data/events.json'
-import { DHAMMA_SCHOOL_HEADER } from '@/consts/consts'
+
+import LangContext from '../../context/LangContext'
 
 const DhammaSchoolPage = () => {
+
+  const { t } = useContext(LangContext)
   const filteredEvents = events.filter(
     (event) => event.category === 'Dhamma School'
   )
@@ -12,7 +17,7 @@ const DhammaSchoolPage = () => {
       <div className="text-black container mx-auto px-4 sm:px-10 lg:px-20">
         <div className="block mx-auto my-12 font-semibold w-full lg:w-2/4">
           <p className="text-center text-xl sm:text-2xl md:text-3xl lg:text-3xl xl:text-4xl mb-4 leading-normal">
-            {DHAMMA_SCHOOL_HEADER}
+            {t('DHAMMA_SCHOOL_HEADER')}
           </p>
         </div>
         <div className="block my-12">
