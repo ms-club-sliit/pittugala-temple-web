@@ -1,30 +1,34 @@
-import { EVENTS, FIND_OUT_MORE } from '@/consts/consts'
+'use client'
+import { useContext } from 'react';
 import Link from 'next/link'
 import Image from 'next/image'
 
+import LangContext from '../../../context/LangContext'
+
 export default function index() {
+  const { t } = useContext(LangContext)
   const events = [
     {
       id: 1,
       src: '/static/event1.png',
-      topic: 'පෝය දා බණ පිංකම ',
+      topic: t('EVENTS_TOPIC1'),
     },
     {
       id: 2,
       src: '/static/event2.png',
-      topic: 'පෝය දා සිල් සමාදන් වැඩසටහන',
+      topic: t('EVENTS_TOPIC2'),
     },
     {
       id: 3,
       src: '/static/event3.png',
-      topic: 'අසිරිමත් වෙසක් පොහොය වර්ණනාව.',
+      topic: t('EVENTS_TOPIC3'),
     },
   ]
 
   return (
     <div className="flex flex-col  py-10  w-full bg-bg-orange">
       <h1 className="text-4xl  text-center font-bold mb-8 text-black">
-        {EVENTS}
+        {t('EVENTS')}
       </h1>
       <div className=" w-full  flex items-center  justify-center sm:items-start  flex-col sm:flex-row  drop-shadow">
         {events.map((event) => (
@@ -53,7 +57,7 @@ export default function index() {
           href="/events"
           className="bg-orange hover:bg-light-orange text-white font-bold py-2 px-4 rounded"
         >
-          {FIND_OUT_MORE} {'>'}
+          {t('FIND_OUT_MORE')} {'>'}
         </Link>
       </div>
     </div>
