@@ -1,11 +1,11 @@
 'use client'
-import { useContext } from 'react';
+import React , { useContext } from 'react';
 import Link from 'next/link'
 import Image from 'next/image'
 
 import LangContext from '../../../context/LangContext'
 
-export default function index() {
+export default function Events() {
   const { t } = useContext(LangContext)
   const events = [
     {
