@@ -1,8 +1,14 @@
 'use client'
+import { useContext } from 'react';
 import { useRouter } from 'next/navigation'
 import { DHAMMA_SCHOOL, GALLERY } from '@/consts/consts'
 
+import LangContext from '../../../context/LangContext'
+
 export default function Discover() {
+
+  const { t } = useContext(LangContext)
+
   const router = useRouter()
 
   const load = () => {
@@ -47,7 +53,7 @@ export default function Discover() {
               }}
               className="bg-[#740000] text-xs rounded-full py-1 sm:px-2 xl:px-6 xl:py-3  my-1 text-white"
             >
-              {DHAMMA_SCHOOL}
+              {t('DHAMMA_SCHOOL')}
             </button>
             <button
               onClick={() => {
@@ -55,7 +61,7 @@ export default function Discover() {
               }}
               className="rounded-full text-xs font-semibold py-1 text-[#740000] my-1 border-[1px] xl:border-2 border-[#740000] sm:px-2 xl:px-6 md:py-3"
             >
-              {GALLERY}
+              {t('GALLERY')}
             </button>
           </div>
         </div>
