@@ -1,10 +1,12 @@
 // Event Navigation bar
 'use client'
 import { styled } from '@mui/material/styles'
-import { useState } from 'react'
+import { useState , useContext } from 'react'
 import Link from 'next/link'
 import SearchIcon from '@mui/icons-material/Search'
 import TextField from '@mui/material/TextField'
+
+import LangContext from '../../context/LangContext'
 
 const CustomTextField = styled(TextField)({
   '& .MuiOutlinedInput-input': {
@@ -31,15 +33,18 @@ const linkStyles = (isActive) => ({
   transition: 'background-color 0.3s, color 0.3s',
 })
 
-const links = [
-  { label: 'සියළුම වැඩසටහන්', key: 'All' },
-  { label: 'පෝය දින', key: 'Poya Day' },
-  { label: 'තොරතුරු', key: 'Information' },
-  { label: 'බෝධි පූජා', key: 'Bodhi Pooja' },
-  { label: 'ආධාර', key: 'Charity' },
-]
-
 const EventNavigation = ({ activeLink, setActiveLink, onSearch }) => {
+  
+  const { t } = useContext(LangContext)
+
+const links = [
+  { label: t('ALL_EVENTS'), key: 'All' },
+  { label: t('POYA_DAYS'), key: 'Poya Day' },
+  { label: t('INFORMATION'), key: 'Information' },
+  { label: t('BODHI_POOJA'), key: 'Bodhi Pooja' },
+  { label: t('DONATION'), key: 'Charity' },
+]
+  
   const [isMobileMenuOpen, setMobileMenuOpen] = useState(false)
 
   const toggleMobileMenu = () => {

@@ -12,6 +12,9 @@
     "PROJECT_TEXT": "Project Text",
     "HISTORY": "History of Sri Sudharshanaramaya",
     "DONATION_HEADER": "Money Donations",
+    "DONATION_TEXT1": "Donation Text1",
+    "DONATION_TEXT2": "Donation Text2",
+    "DONATION_TEXT3": "Donation Text3",
     "REFERENCES": "References",
     "ABOUT" : "About the Temple",
     "EVENTS" : "Events",
@@ -23,5 +26,17 @@
     "VIEW_EVENT":"View Event",
     "CONNECT_WITH_US":"Connect With Us",
     "ADDRESS":"Address",
-    "DHAMMA_SCHOOL_HEADER":"Sri Tharunodaya Dhamma School"
+    "DHAMMA_SCHOOL_HEADER":"Sri Tharunodaya Dhamma School",
+    "DHAMMA_SCHOOL_TEXT1":"Dhamma School Text1",
+    "DHAMMA_SCHOOL_TEXT2":"Dhamma School Text2",
+    "ALL_EVENTS":"All Events",
+    "POYA_DAYS": "Poya Days",
+    "INFORMATION": "Information",
+    "BODHI_POOJA": "Bodhi Pooja",
+    "DONATION": "Donations",
+    "PROJECT_TOPIC": "Project Topic",
+    "CURRENT_CONDITION": "Current Condition",
+    "COMPLETED_CONDITION": "Completed Condition",
+    "PROJECT_PARAGRAPH": "Project Paragraph",
+    "PROJECT_ESTIMATION": "Project Estimation"
 }

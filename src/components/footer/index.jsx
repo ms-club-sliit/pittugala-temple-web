@@ -12,7 +12,7 @@ const Footer = () => {
   const { t } = useContext(LangContext)
 
   return (
-    <footer className="bg-white">
+    <footer className="bg-white shadow-inner">
       <div className="mx-auto w-full max-w-screen-xl p-4 py-6 lg:py-8 ">
         <div className="text-black">
           <div className="grid gap-6 lg:gap-8 grid-cols-12">
