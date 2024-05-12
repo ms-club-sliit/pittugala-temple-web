@@ -1,5 +1,5 @@
 'use client'
-import React , { useContext } from 'react';
+import React, { useContext } from 'react';
 import Link from 'next/link'
 import Image from 'next/image'
 
@@ -11,17 +11,20 @@ export default function Events() {
     {
       id: 1,
       src: '/static/event1.png',
-      topic: t('EVENTS_TOPIC1'),
+      topic: 'පෝය දා බණ පිංකම',
+      topic_en: 'topic_en'
     },
     {
       id: 2,
       src: '/static/event2.png',
-      topic: t('EVENTS_TOPIC2'),
+      topic: 'පෝය දා සිල් සමාදන් වැඩසටහන',
+      topic_en: 'topic_en'
     },
     {
       id: 3,
       src: '/static/event3.png',
-      topic: t('EVENTS_TOPIC3'),
+      topic: 'අසිරිමත් වෙසක් පොහොය වර්ණනාව',
+      topic_en: 'topic_en'
     },
   ]
 
@@ -45,8 +48,14 @@ export default function Events() {
             />
 
             <div className="p-2">
-              <h2 className="  sm:text-xs md:text-sm lg:text-md xl:text-lg text-center font-medium mb-2 md:mb-4 text-black">
-                {event.topic}
+              <h2 className=" sm:text-xs md:text-sm lg:text-md xl:text-lg text-center font-medium mb-2 md:mb-4 text-black">
+                {/* {event.topic} */}
+                {
+                  t('LANGUAGE') === 'en' ?
+                    <div>{event.topic_en}</div>
+                    :
+                    <div>{event.topic}</div>
+                }
               </h2>
             </div>
           </div>

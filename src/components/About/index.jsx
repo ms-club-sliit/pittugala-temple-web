@@ -3,13 +3,6 @@ import React, { useContext } from 'react'
 import Link from 'next/link'
 import Image from 'next/image'
 
-import {
-  ABOUT_TEXT,
-  ABOUT_POTRAIT_TEXT,
-  ABOUT,
-  FIND_OUT_MORE,
-} from '../../consts/consts'
-
 import LangContext from '../../context/LangContext'
 
 const About = () => {
