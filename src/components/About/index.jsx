@@ -30,7 +30,7 @@ const About = () => {
               width={320}
               height={280}
             />
-            <p className="mb-6 text-sm text-black w-70 text-center mt-5 font-extrabold">
+            <p className="mb-6 text-sm text-black w-70 text-center mt-5 font-bold">
               {t('ABOUT_POTRAIT_TEXT')}
             </p>
           </div>

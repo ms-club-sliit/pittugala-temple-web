@@ -3,6 +3,7 @@ import { Inter } from 'next/font/google'
 import Footer from '@/components/footer'
 import Navbar from '@/components/Navbar'
 import DonationButton from '@/components/DonationButton'
+import LangButton from '@/components/LangButton'
 
 import { LangProvider } from '../context/LangContext'
 
@@ -19,6 +20,7 @@ export default function RootLayout({ children }) {
     <html lang="en">
       <body className={`${inter.className} bg-white`}>
         <LangProvider>
+          <LangButton />
           <DonationButton />
           <Navbar />
           {children}
