@@ -1,5 +1,5 @@
 'use client'
-import { useState, useContext } from 'react'
+import { useState, useContext, useEffect } from 'react'
 import Image from 'next/image'
 import Link from 'next/link'
 
@@ -7,6 +7,7 @@ import LangContext from '../context/LangContext'
 
 const Navbar = () => {
   const [isMobileMenuOpen, setMobileMenuOpen] = useState(false)
+  const [lang, setLang] = useState('');
 
   const { t, changeLanguage } = useContext(LangContext)
 
@@ -16,7 +17,14 @@ const Navbar = () => {
 
   const handleLangUpdate = (e) => {
     changeLanguage(e.target.value)
+    setLang(e.target.value)
   }
+
+  useEffect(() => {
+    const selectedLang = t('LANGUAGE');
+    setLang(selectedLang);
+  }, [t]);
+
 
   return (
     <nav className="bg-white p-4 text-black font-semibold">
@@ -105,11 +113,11 @@ const Navbar = () => {
             </Link>
           </li>
           <li className="pl-5">
-              <select onChange={handleLangUpdate}>
-                <option value="en">English</option>
-                <option value="si">සිංහල</option>
-              </select>
-            </li>
+            <select onChange={handleLangUpdate} value={lang}>
+              <option value="en">English</option>
+              <option value="si">සිංහල</option>
+            </select>
+          </li>
         </div>
       </ul>
     </nav>
