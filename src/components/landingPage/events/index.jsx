@@ -1,30 +1,37 @@
-import { EVENTS, FIND_OUT_MORE } from '@/consts/consts'
+'use client'
+import React, { useContext } from 'react';
 import Link from 'next/link'
 import Image from 'next/image'
 
-export default function index() {
+import LangContext from '../../../context/LangContext'
+
+export default function Events() {
+  const { t } = useContext(LangContext)
   const events = [
     {
       id: 1,
       src: '/static/event1.png',
-      topic: 'පෝය දා බණ පිංකම ',
+      topic: 'පෝය දා බණ පිංකම',
+      topic_en: 'Poya Day Preaching Ceremony'
     },
     {
       id: 2,
       src: '/static/event2.png',
       topic: 'පෝය දා සිල් සමාදන් වැඩසටහන',
+      topic_en: 'Poya Day Observing Sil Program '
     },
     {
       id: 3,
       src: '/static/event3.png',
-      topic: 'අසිරිමත් වෙසක් පොහොය වර්ණනාව.',
+      topic: 'අසිරිමත් වෙසක් පොහොය වර්ණනාව',
+      topic_en: 'Description of the Glorious Vesak Poya day'
     },
   ]
 
   return (
     <div className="flex flex-col  py-10  w-full bg-bg-orange">
       <h1 className="text-4xl  text-center font-bold mb-8 text-black">
-        {EVENTS}
+        {t('EVENTS')}
       </h1>
       <div className=" w-full  flex items-center  justify-center sm:items-start  flex-col sm:flex-row  drop-shadow">
         {events.map((event) => (
@@ -41,8 +48,14 @@ export default function index() {
             />
 
             <div className="p-2">
-              <h2 className="  sm:text-xs md:text-sm lg:text-md xl:text-lg text-center font-medium mb-2 md:mb-4 text-black">
-                {event.topic}
+              <h2 className=" sm:text-xs md:text-sm lg:text-md xl:text-lg text-center font-medium mb-2 md:mb-4 text-black">
+                {/* {event.topic} */}
+                {
+                  t('LANGUAGE') === 'en' ?
+                    <div>{event.topic_en}</div>
+                    :
+                    <div>{event.topic}</div>
+                }
               </h2>
             </div>
           </div>
@@ -53,7 +66,7 @@ export default function index() {
           href="/events"
           className="bg-orange hover:bg-light-orange text-white font-bold py-2 px-4 rounded"
         >
-          {FIND_OUT_MORE} {'>'}
+          {t('FIND_OUT_MORE')} {'>'}
         </Link>
       </div>
     </div>
