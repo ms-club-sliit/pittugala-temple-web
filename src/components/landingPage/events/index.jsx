@@ -12,19 +12,19 @@ export default function Events() {
       id: 1,
       src: '/static/event1.png',
       topic: 'පෝය දා බණ පිංකම',
-      topic_en: 'topic_en'
+      topic_en: 'Poya Day Preaching Ceremony'
     },
     {
       id: 2,
       src: '/static/event2.png',
       topic: 'පෝය දා සිල් සමාදන් වැඩසටහන',
-      topic_en: 'topic_en'
+      topic_en: 'Poya Day Observing Sil Program '
     },
     {
       id: 3,
       src: '/static/event3.png',
       topic: 'අසිරිමත් වෙසක් පොහොය වර්ණනාව',
-      topic_en: 'topic_en'
+      topic_en: 'Description of the Glorious Vesak Poya day'
     },
   ]
 
