@@ -1,8 +1,11 @@
-import './globals.css'
+import '../assets/globals.css'
 import { Inter } from 'next/font/google'
 import Footer from '@/components/footer'
 import Navbar from '@/components/Navbar'
 import DonationButton from '@/components/DonationButton'
+import LangButton from '@/components/LangButton'
+
+import { LangProvider } from '../context/LangContext'
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -12,13 +15,17 @@ export const metadata = {
 }
 
 export default function RootLayout({ children }) {
+
   return (
     <html lang="en">
       <body className={`${inter.className} bg-white`}>
-        <DonationButton />
-        <Navbar />
-        {children}
-        <Footer />
+        <LangProvider>
+          {/* <LangButton /> */}
+          <DonationButton />
+          <Navbar />
+          {children}
+          <Footer />
+        </LangProvider>
       </body>
     </html>
   )

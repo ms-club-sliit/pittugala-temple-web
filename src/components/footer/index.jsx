@@ -1,21 +1,18 @@
+'use client'
+import { useContext } from 'react';
 import { faFacebook } from '@fortawesome/free-brands-svg-icons'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import Link from 'next/link'
 import Image from 'next/image'
 
-import {
-  ABOUT,
-  ADDRESS,
-  CONNECT_WITH_US,
-  DHAMMA_SCHOOL,
-  EVENTS,
-  PROJECTS,
-  REFERENCES,
-} from '@/consts/consts'
+import LangContext from '../../context/LangContext'
 
 const Footer = () => {
+
+  const { t } = useContext(LangContext)
+
   return (
-    <footer className="bg-white">
+    <footer className="bg-white shadow-inner">
       <div className="mx-auto w-full max-w-screen-xl p-4 py-6 lg:py-8 ">
         <div className="text-black">
           <div className="grid gap-6 lg:gap-8 grid-cols-12">
@@ -31,8 +28,7 @@ const Footer = () => {
                   />
                 </a>
                 <p className="my-8 text-lg">
-                  මාලඹේ පිට්ටුගල ශ්‍රී සුදර්ශනාරාමය අවුරුදු 300 කට වඩා පැරණි
-                  පුරාණ මහා විහාරයකි.
+                  {t('FOOTER_TEXT')}
                 </p>
 
                 <div className="flex mt-4 space-x-5 sm:justify-start sm:mt-0">
@@ -55,34 +51,34 @@ const Footer = () => {
             </div>
             <div className="lg:col-span-2 col-span-6">
               <h2 className="mb-6 text-xl font-semibold uppercase">
-                {REFERENCES}
+                {t('REFERENCES')}
               </h2>
               <ul className="font-medium">
                 <li className="mb-4">
                   <Link href="/about" className="hover:underline">
-                    {ABOUT}
+                    {t('ABOUT')}
                   </Link>
                 </li>
                 <li className="mb-4">
                   <Link href="/projects" className="hover:underline">
-                    {PROJECTS}
+                    {t('PROJECTS')}
                   </Link>
                 </li>
                 <li className="mb-4">
                   <Link href="/events" className="hover:underline">
-                    {EVENTS}
+                    {t('EVENTS')}
                   </Link>
                 </li>
                 <li className="mb-4">
                   <Link href="/dhammaSchool" className="hover:underline">
-                    {DHAMMA_SCHOOL}
+                    {t('DHAMMA_SCHOOL')}
                   </Link>
                 </li>
               </ul>
             </div>
             <div className="lg:col-span-3 col-span-6">
               <h2 className="mb-6 text-xl font-semibold uppercase">
-                {CONNECT_WITH_US}
+                {t('CONNECT_WITH_US')}
               </h2>
               <ul className="text-black font-medium">
                 <li className="mb-4">
@@ -99,7 +95,7 @@ const Footer = () => {
                   </a>
                 </li>
                 <li className="mb-4">
-                  <span>{ADDRESS}</span>
+                  <span>{t('ADDRESS')}</span>
                 </li>
               </ul>
             </div>

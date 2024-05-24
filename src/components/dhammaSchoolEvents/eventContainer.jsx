@@ -1,7 +1,11 @@
-import { VIEW_EVENT } from '@/consts/consts'
+'use client'
+import { useContext } from 'react';
 import Image from 'next/image'
 
+import LangContext from '../../context/LangContext'
+
 const EventContainer = ({ event }) => {
+  const { t } = useContext(LangContext)
   if (event.title && event.title.length > 40) {
     event.title = event.title.substring(0, 40) + '...'
   }
@@ -31,7 +35,7 @@ const EventContainer = ({ event }) => {
           <div className="flex justify-center mt-5">
             <a target="_blank" rel="noopener noreferrer" href={event.link}>
               <button className="bg-red-900 font-semibold h-10 flex justify-center w-full sm:px-5 px-[35px] py-[11px] rounded-[3px] sm:text-sm text-xs text-white">
-                {VIEW_EVENT}
+                {t('VIEW_EVENT')}
               </button>
             </a>
           </div>

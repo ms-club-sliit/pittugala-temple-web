@@ -1,6 +1,5 @@
 'use client'
-
-import React, { useState } from 'react'
+import React, { useState , useContext } from 'react'
 import Image from 'next/image'
 import Fab from '@mui/material/Fab'
 import Backdrop from '@mui/material/Backdrop'
@@ -9,10 +8,10 @@ import Modal from '@mui/material/Modal'
 import Fade from '@mui/material/Fade'
 import Typography from '@mui/material/Typography'
 import VolunteerActivismIcon from '@mui/icons-material/VolunteerActivism'
-
-import { DONATION_HEADER } from '@/consts/consts'
+import LangContext from '../../context/LangContext'
 
 export default function DonationButton() {
+  const { t } = useContext(LangContext)
   const [open, setOpen] = useState(false)
   const handleOpen = () => setOpen(true)
   const handleClose = () => setOpen(false)
@@ -95,7 +94,7 @@ export default function DonationButton() {
                 component="h2"
                 style={headerStyle}
               >
-                {DONATION_HEADER}
+                {t('DONATION_HEADER')}
               </Typography>
               <br />
               <div
@@ -118,11 +117,11 @@ export default function DonationButton() {
                 sx={{ mt: 2 }}
                 style={bodyStyle}
               >
-                විහාරාධිපති
+                {t('DONATION_TEXT1')}
                 <br />
-                ශ්‍රී සුදර්ශනාරාම පුරාණ විහාරය - මාලඹේ
+                {t('DONATION_TEXT2')}
                 <br />
-                ලංකා බැංකුව මාලඹේ ශාඛව - 8576912
+                {t('DONATION_TEXT3')} - 8576912
                 <br />
                 0715608209
               </Typography>
